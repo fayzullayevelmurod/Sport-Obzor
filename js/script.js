@@ -1,7 +1,7 @@
 // script.js
 $(document).ready(function () {
 	const giftBoxCard = $(".gift-box__card");
-	giftBoxCard.slideUp(100);
+	giftBoxCard.slideUp(0);
 
 	$(".gift-box__img").click(function () {
 		// giftBoxCard.toggle("slide");
@@ -10,5 +10,5 @@ $(document).ready(function () {
 	$(".close-btn").click(function () {
 		giftBoxCard.slideUp(300);
 	})
-
 });
+
