@@ -198,6 +198,7 @@ body {
 .header .gift-box__card {
 	position: absolute;
 	z-index: 999;
+	transform-origin: top;
 	top: 46px;
 	left: 50%;
 	transform: translateX(-50%) scaleY(0);
@@ -594,6 +595,17 @@ body {
 	justify-content: space-between;
 }
 
+.time-box.player-statistics .times {
+	gap: 0;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.time-box.player-statistics .times p {
+	font-size: 14px;
+	line-height: 18px;
+}
+
 .time-box .times {
 	gap: 48px;
 }
@@ -970,10 +982,6 @@ body {
 
 /* team-section__table */
 
-.team-section {
-	margin-top: 40px;
-}
-
 table {
 	width: 100%;
 }
@@ -989,6 +997,11 @@ td {
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
 	overflow: hidden;
+	margin-top: 40px;
+}
+
+.team-section.player-statistics__page {
+	margin-top: 20px;
 }
 
 .team-section thead {
@@ -1006,18 +1019,55 @@ td {
 	border-bottom: none;
 }
 
-.team-section thead td:first-child {
+.team-section.team-page thead td:first-child {
 	padding-left: 72px;
 }
 
+.team-section thead td:first-child {
+	padding-left: 21px;
+}
+
 .team-section thead td:last-child {
+	padding-right: 21px;
+}
+
+.team-section.team-page thead td:last-child {
 	padding-right: 45px;
 	width: 150px;
 }
 
-.team-section thead td:nth-child(3),
-.team-section thead td:nth-child(4) {
+.team-section.team-page thead td:nth-child(3),
+.team-section.team-page thead td:nth-child(4) {
 	width: 95px;
+}
+
+.team-section.player-statistics__page table td {
+	text-align: center;
+}
+
+.team-section.player-statistics__page tbody td:last-child {
+	padding-right: 20px;
+}
+
+.team-section.player-statistics__page tbody td:first-child {
+	width: auto;
+}
+
+.team-section.player-statistics__page tbody td {
+	width: 70px;
+}
+
+.team-section.player-statistics__page tbody td:nth-child(6) {
+	width: 80px;
+}
+
+.team-section.player-statistics__page tbody td:nth-child(8) {
+	width: 85px;
+}
+
+.team-section.player-statistics__page tbody td:nth-child(9),
+.team-section.player-statistics__page tbody td:nth-child(10) {
+	width: 40px;
 }
 
 .team-section table td {
@@ -1053,6 +1103,11 @@ td {
 	align-items: center;
 	gap: 14px;
 	padding-left: 16px;
+	text-align: left !important;
+}
+
+.team-section.player-statistics__page td:first-child {
+	gap: 9px;
 }
 
 .team-section td span {
@@ -1061,6 +1116,21 @@ td {
 	font-weight: 400;
 	line-height: 19px;
 	display: inline-block;
+}
+
+.team-section.player-statistics__page td span {
+	font-size: 13px;
+	line-height: 17px;
+}
+
+.team-section.player-statistics__page td p {
+	font-size: 15px;
+	line-height: 19px;
+}
+
+.team-section.player-statistics__page table td {
+	font-size: 14px;
+	line-height: 18px;
 }
 
 .team-section td p {
