@@ -630,11 +630,19 @@ body {
 	margin: 33px 0 25px 0;
 }
 
+.left-sidebar .title-box__sm span {
+	color: var(--gunmetal-blue);
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 15px;
+}
+
 .left-sidebar .title-box__sm {
 	display: flex;
 	align-items: center;
 	gap: 10px;
 	margin: 35px 0 22px 0;
+	justify-content: space-between;
 }
 
 .left-sidebar .acordion {
@@ -736,6 +744,15 @@ body {
 	font-weight: 400;
 	line-height: 18px;
 	margin: 0 40px 0 16px;
+}
+
+.left-sidebar .group-name__box .group-numbers {
+	display: flex;
+	gap: 37px;
+}
+
+.left-sidebar .group-name__box .group-number.disabled {
+	color: var(--manatee-gray);
 }
 
 .left-sidebar .group-name__box .group-number {
@@ -909,8 +926,24 @@ body {
 	margin-top: 16px;
 }
 
-.results-section {
-	padding-top: 39px;
+.results-section ul li {
+	padding: 0 !important;
+	position: relative;
+}
+
+.results-section ul li::before {
+	content: "";
+	position: absolute;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	background-color: var(--gunmetal-blue);
+	left: -9px;
+	top: 6px;
+}
+
+.results-section ul {
+	padding-left: 20px;
 }
 
 .results-section .results-section__info {
