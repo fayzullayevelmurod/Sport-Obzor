@@ -22,6 +22,7 @@
 	--cornflower-blue: #8592FF;
 	--platinum: #ECF0F1;
 	--manatee-gray: #98A1BE;
+	--lavender-blue: #EAECF6;
 }
 
 * {
@@ -399,7 +400,7 @@ body {
 	display: flex;
 	align-items: center;
 	gap: 4px;
-	margin-bottom: 6px;
+	margin-bottom: 25px;
 }
 
 .hero-section .breadcrumb a {
@@ -604,6 +605,11 @@ body {
 	font-weight: 400;
 	line-height: 19px;
 	position: relative;
+}
+
+.time-box .times p:hover,
+.time-box .times p.active-text {
+	color: var(--midnight-blue);
 }
 
 .time-box .times p.active::before {
@@ -962,7 +968,107 @@ body {
 	text-decoration: underline;
 }
 
-/* footer style */
+/* team-section__table */
+
+.team-section {
+	margin-top: 40px;
+}
+
+table {
+	width: 100%;
+}
+
+table,
+th,
+td {
+	border-collapse: collapse;
+	text-align: left;
+}
+
+.team-section {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	overflow: hidden;
+}
+
+.team-section thead {
+	background-color: var(--lavender);
+	border-radius: 5px;
+	border-left: 1px solid var(--lavender);
+	border-right: 1px solid var(--lavender);
+}
+
+.team-section tbody tr {
+	border-bottom: 1px solid var(--lavender-blue);
+}
+
+.team-section tr:last-child {
+	border-bottom: none;
+}
+
+.team-section thead td:first-child {
+	padding-left: 72px;
+}
+
+.team-section thead td:last-child {
+	padding-right: 45px;
+	width: 150px;
+}
+
+.team-section thead td:nth-child(3),
+.team-section thead td:nth-child(4) {
+	width: 95px;
+}
+
+.team-section table td {
+	padding: 16px 0;
+}
+
+.team-section .team-table__header p {
+	color: var(--midnight-blue);
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 19px;
+}
+
+.team-section table {
+	border: 1px solid var(--lavender-blue);
+	border-top: none;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.team-section .table-tr {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.team-section .table-tr {
+	padding: 13px 16px;
+}
+
+.team-section td:first-child {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	padding-left: 16px;
+}
+
+.team-section td span {
+	color: var(--gunmetal-blue);
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 19px;
+	display: inline-block;
+}
+
+.team-section td p {
+	color: var(--midnight-blue);
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 20px;
+}
 
 /* footer style */
 .footer {
