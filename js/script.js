@@ -10,56 +10,84 @@ $(document).ready(function () {
 	})
 
 	// header menu
-	$('.header-bottom .down-box').hover(function () {
-		$('.header__drop-list').addClass('drop-list-nav');
-	}, function () {
-		$('.header__drop-list').removeClass('drop-list-nav');
-	}
+	// $('.header-bottom .down-box').hover(function () {
+	// 	$(this).addClass('active')
+	// 	$('.header__drop-list').addClass('drop-list-nav');
+	// }, function () {
+	// 	$(this).removeClass('active')
+	// 	$('.header__drop-list').removeClass('drop-list-nav');
+	// }
+	// );
+
+	// $('.header__drop-list').hover(function () {
+	// 	$(this).addClass('drop-list-nav');
+	// }, function () {
+	// 	$(this).removeClass('drop-list-nav');
+	// }
+	// );
+
+	const downBox = $('.header-bottom .down-box');
+	const headerDropList = $('.header__drop-list');
+
+	downBox.hover(
+		function () {
+			// $(this).addClass('active');
+			headerDropList.addClass('drop-list-nav');
+		},
+		function () {
+			// $(this).removeClass('active');
+			headerDropList.removeClass('drop-list-nav');
+		}
 	);
 
-	$('.header__drop-list').hover(function () {
-		$(this).addClass('drop-list-nav');
-	}, function () {
-		$(this).removeClass('drop-list-nav');
-	}
+	headerDropList.hover(
+		function () {
+			// $(downBox).addClass('active');
+			$(this).addClass('drop-list-nav');
+		},
+		function () {
+			// $(downBox).removeClass('active');
+			$(this).removeClass('drop-list-nav');
+		}
 	);
+
 
 	// // Acordion
-	const downBoxHide = document.querySelectorAll(".down-box__hide")
-	const downBox = document.querySelectorAll(".down-box");
-	const upBoxBtn = document.querySelectorAll(".up-box__btn");
-	const accordion = document.querySelectorAll('.accordion');
-	$(downBoxHide).hide();
+	// $('.accordion').each(function (acIndex, item) {
+	// 	const accordionHeader = item.querySelector('.accordion-header');
+	// 	const accordionContent = item.querySelector('.accordion-content__line');
+	// 	$(accordionContent).addClass('hide-content');
 
-	// const accordions = $('.acordion');
-	// console.log(accordions);
-	// accordions.each(function () {
-	// 	const downBoxHide = $(this).find('.down-box__hide');
-	// 	const downBox = $(this).find('.down-box');
-	// 	const upBoxBtn = $(this).find('.up-box__btn');
-	// 	// Hide all down boxes initially
-	// 	downBoxHide.hide();
-
-	// 	// Click event for each button in the accordion
-	// 	upBoxBtn.click(function () {
-	// 		// Toggle the 'active-icon' class
-	// 		$(this).toggleClass('active-icon');
-
-	// 		// Toggle visibility of the corresponding down box with animation
-	// 		downBox.show('fast');
-
-	// 		// Hide other down boxes and remove 'active-icon' class
-	// 		accordions.not($(this).closest('.accordion')).find('.down-box__hide, .down-box').slideUp('fast');
-	// 		upBoxBtn.not(this).removeClass('active-icon');
+	// 	$(accordionHeader).each(function (acHeaderIndex, item) {
+	// 		if (accordionContent.classList.contains('hide-content')) {
+	// 			$(accordionHeader).addClass('active')
+	// 		}
+	// 		$(item).click(function (e) {
+	// 			$(item).toggleClass('active')
+	// 			$(accordionContent).slideToggle();
+	// 		});
 	// 	});
 	// });
+	$('.accordion').each(function (acIndex, item) {
+		const accordionHeader = $(item).find('.accordion-header');
+		const accordionContent = $(item).find('.accordion-content__line');
 
+		accordionContent.addClass('hide-content');
 
-	// if (item === index) {
-	// 	$(item).click(function () {
-	// 		$(this).toggleClass('active-icon');
-	// 		$(downBox).slideToggle('fast');
-	// 		$(downBoxHide).slideToggle('fast');
-	// 	})
-	// }
+		accordionHeader.click(function (e) {
+			const currentHeader = $(this);
+			const currentContent = currentHeader.siblings('.accordion-content__line');
+
+			if (currentHeader.hasClass('active')) {
+				currentHeader.removeClass('active');
+				currentContent.slideUp().addClass('hide-content');
+			} else {
+				$('.accordion-header').removeClass('active');
+				$('.accordion-content__line').slideUp().addClass('hide-content');
+
+				currentHeader.addClass('active');
+				currentContent.slideDown().removeClass('hide-content');
+			}
+		});
+	});
 });
