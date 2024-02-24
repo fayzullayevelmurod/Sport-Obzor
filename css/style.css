@@ -1,3 +1,16 @@
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--forest-green);
+	border-radius: 5px;
+}
+
 /* core style */
 :root {
 	--lavender: #F3F5FF;
@@ -60,6 +73,10 @@ body {
 	font-family: 'Onest', sans-serif;
 	font-weight: normal;
 	color: var(--midnight-blue);
+}
+
+.wrapper {
+	overflow: hidden;
 }
 
 .btn {
@@ -1155,6 +1172,113 @@ td {
 	font-weight: 600;
 	line-height: 20px;
 }
+
+/* select start */
+
+.select {
+	display: block;
+	max-width: 346px;
+	width: 100%;
+	position: relative;
+}
+
+.new-select {
+	position: relative;
+	padding: 16px 21px;
+	cursor: pointer;
+	user-select: none;
+	border-radius: 5px;
+	height: 50px;
+	width: 100%;
+	background: var(--lavender);
+	color: rgb(31, 38, 61);
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 19px;
+}
+
+.new-select__list {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	cursor: pointer;
+	width: 100%;
+	z-index: 2;
+	background: var(--lavender);
+	user-select: none;
+	overflow-y: scroll;
+	height: 215px;
+	z-index: 10;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	transform: scaleY(0);
+	transform-origin: top;
+}
+
+.new-select__list.on {
+	/* display: block; */
+	transform: scaleY(1);
+}
+
+.new-select__item span {
+	display: block;
+	padding: 10px 21px;
+}
+
+.new-select__item span:hover {
+	color: #12b223;
+}
+
+.new-select.on {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.new-select:after {
+	content: '';
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	right: 21px;
+	top: 50%;
+	background: url('../images/icons/down-icon-black.svg') no-repeat right;
+	background-size: 12px 12px;
+	opacity: 0.6;
+	-webkit-transition: all .27s ease-in-out;
+	-o-transition: all .27s ease-in-out;
+	transition: all .27s ease-in-out;
+	-webkit-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: translateY(-50%) rotate(0deg);
+}
+
+.new-select.on:after {
+	-webkit-transform: translateY(-50%) rotate(180deg);
+	-ms-transform: translateY(-50%) rotate(180deg);
+	-o-transform: translateY(-50%) rotate(180deg);
+	transform: translateY(-50%) rotate(180deg);
+}
+
+/* select */
+.sidebars-section .filter-by {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+	margin-top: 18px;
+}
+
+.sidebars-section .filter-by__reset {
+	color: var(--slate-blue);
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 17px;
+	text-decoration-line: underline;
+	cursor: pointer;
+	margin-left: 41px;
+}
+
+
 
 /* footer style */
 .footer {

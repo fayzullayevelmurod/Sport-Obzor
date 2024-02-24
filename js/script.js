@@ -90,4 +90,49 @@ $(document).ready(function () {
 			}
 		});
 	});
+
+	// select
+	$('.select').each(function () {
+		const _this = $(this),
+			selectOption = _this.find('option').not(':disabled'),
+			duration = 240;
+
+		_this.hide().wrap('<div class="select"></div>');
+		$('<div>', {
+			class: 'new-select',
+			text: _this.children('option:disabled').text()
+		}).insertAfter(_this);
+
+		const selectHead = _this.next('.new-select');
+		$('<div>', { class: 'new-select__list' }).insertAfter(selectHead);
+
+		const selectList = selectHead.next('.new-select__list');
+		selectOption.each(function () {
+			$('<div>', {
+				class: 'new-select__item',
+				'data-value': $(this).val(),
+				html: $('<span>', { text: $(this).text() })
+			}).appendTo(selectList);
+		});
+
+		const selectItem = selectList.find('.new-select__item');
+		// selectList.slideUp(0);
+
+		selectHead.on('click', function () {
+			const isOpen = $(this).hasClass('on');
+			$(this).toggleClass('on', !isOpen);
+			selectList.toggleClass('on');
+
+			if (isOpen) return;
+
+			selectItem.on('click', function () {
+				const chooseItem = $(this).data('value');
+				_this.val(chooseItem).attr('selected', 'selected');
+				selectHead.text($(this).find('span').text());
+				selectList.removeClass('on');
+				selectHead.removeClass('on');
+			});
+		});
+	});
+
 });
