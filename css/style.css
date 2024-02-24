@@ -665,6 +665,10 @@ body {
 	cursor: pointer;
 }
 
+.left-sidebar .title-box.match-results {
+	margin: 25px 0 12px 0;
+}
+
 .left-sidebar .title-box {
 	display: flex;
 	align-items: center;
@@ -1265,7 +1269,7 @@ td {
 	display: flex;
 	align-items: center;
 	gap: 14px;
-	margin-top: 18px;
+	margin-bottom: 23px;
 }
 
 .sidebars-section .filter-by__reset {
