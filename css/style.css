@@ -1784,6 +1784,11 @@ input[type="search"]::-webkit-search-results-decoration {
 	margin-bottom: 0;
 }
 
+.player-card__img {
+	object-fit: cover;
+	border-radius: 5px;
+}
+
 .player-card .card-info__boxes span,
 .player-card .card-info__boxes p {
 	color: var(--midnight-blue);
@@ -1795,7 +1800,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .player-card {
-	margin-bottom: 30px;
+	margin: 25px 0 30px 0;
 }
 
 .card-info__boxes-info-text {
