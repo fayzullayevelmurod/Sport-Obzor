@@ -36,6 +36,7 @@
 	--platinum: #ECF0F1;
 	--manatee-gray: #98A1BE;
 	--lavender-blue: #EAECF6;
+	--lavande-nail: #C9CEE1;
 }
 
 * {
@@ -92,6 +93,10 @@ body {
 
 .btn:hover {
 	background-color: #8152FF;
+}
+
+.title-text.black {
+	color: #000;
 }
 
 .title-text {
@@ -612,6 +617,15 @@ body {
 	margin-top: 22px;
 }
 
+.left-sidebar .sorting-boxes {
+	margin-bottom: 25px;
+}
+
+.left-sidebar .sorting-boxes .sorting-box {
+	gap: 42px;
+	justify-content: start;
+}
+
 .time-box,
 .time-box .times {
 	display: flex;
@@ -676,7 +690,8 @@ body {
 	margin: 33px 0 25px 0;
 }
 
-.left-sidebar .title-box__sm span {
+.left-sidebar .title-box__sm span,
+.left-sidebar .title-box__sm a {
 	color: var(--gunmetal-blue);
 	font-size: 12px;
 	font-weight: 400;
@@ -887,8 +902,15 @@ body {
 	line-height: 15px;
 }
 
-.forecasts .forecasts-boxes,
 .media-files .media-files__boxes {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(319px, 1fr));
+	flex-wrap: wrap;
+	row-gap: 16px;
+	column-gap: 19px;
+}
+
+.forecasts .forecasts-boxes {
 	display: flex;
 	justify-content: space-between;
 	gap: 21px;
@@ -937,7 +959,7 @@ body {
 }
 
 .forecasts .forecasts-box__title,
-.media-files .media-files__boxe p {
+.media-files .media-files__box p {
 	color: var(--midnight-blue);
 	font-size: 15px;
 	font-weight: 700;
@@ -962,21 +984,54 @@ body {
 	padding-bottom: 38px;
 }
 
-.media-files .media-files__boxe {
+.media-files .media-files__box {
 	height: 222px;
 	border-radius: 5px;
 	background-image: url(../images/media-1.png);
 	background-repeat: no-repeat;
 	padding: 0 30px 27px 26px;
 	width: 100%;
-	padding-top: auto;
 	border-radius: 5px;
 	display: flex;
 	flex-direction: column;
 	justify-content: end;
 }
 
-.media-files .media-files__boxe p {
+.left-sidebar .pagination-boxes {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	justify-content: center;
+	margin-top: 9px;
+}
+
+.left-sidebar .pagination-box:hover {
+	background-color: var(--lavender);
+	border-color: var(--lavender);
+}
+
+.left-sidebar .pagination-box.active {
+	background-color: var(--lavender);
+	border-color: var(--lavender);
+}
+
+.left-sidebar .pagination-box {
+	width: 40px;
+	cursor: pointer;
+	height: 39px;
+	border: 1px solid var(--lavande-nail);
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: var(--gunmetal-blue);
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 15px;
+}
+
+.media-files .media-files__box p {
 	color: var(--white);
 	margin-top: 16px;
 }
