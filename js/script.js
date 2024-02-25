@@ -225,4 +225,9 @@ $(document).ready(function () {
 		$('.header-midle').toggleClass('active');
 		$('.header-bottom').toggleClass('active');
 	})
+
+	// read more 
+	$('.read-more__btn').click(function () {
+		$('.media-files__box.media-hiden').slideToggle()
+	})
 });

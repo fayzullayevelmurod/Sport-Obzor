@@ -801,6 +801,22 @@ html .ui-button.ui-state-disabled:active {
 	justify-content: start;
 }
 
+.left-sidebar .sorting-boxes .sorting-box {
+	overflow-x: auto;
+}
+
+.left-sidebar .sorting-boxes .sorting-box a {
+	white-space: nowrap;
+}
+
+.football-video .times {
+	flex-wrap: nowrap !important;
+}
+
+.left-sidebar .sorting-boxes .sorting-box::-webkit-scrollbar {
+	height: 0;
+}
+
 .time-box,
 .time-box .times {
 	display: flex;
@@ -853,7 +869,7 @@ html .ui-button.ui-state-disabled:active {
 	content: "";
 	position: absolute;
 	bottom: 0;
-	left: -3%;
+	left: -4%;
 	width: 110%;
 	height: 2px;
 	background-color: var(--midnight-blue);
@@ -2839,6 +2855,27 @@ input[type="search"]::-webkit-search-results-decoration {
 	.left-sidebar .title-box.match-results {
 		display: none;
 	}
+
+	.pagination-boxes {
+		display: none !important;
+	}
+
+	.read-more__btn {
+		display: block !important;
+		width: 148px;
+		height: 32px;
+		line-height: 29px;
+		color: rgb(81, 89, 113);
+		font-size: 12px;
+		font-weight: 600;
+		border: 1px solid rgb(201, 206, 225);
+		border-radius: 8px;
+		margin: 27px auto 0 auto;
+	}
+
+	.football-video .media-files__box.media-hiden {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 400px) {
@@ -2854,6 +2891,10 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .relative {
 	position: relative;
+}
+
+.read-more__btn {
+	display: none;
 }
 
 .swiper-button-next:after,
