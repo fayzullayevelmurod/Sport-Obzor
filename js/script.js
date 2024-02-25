@@ -26,6 +26,11 @@ $(document).ready(function () {
 	// }
 	// );
 
+	// search
+	$('.search-btn').click(function () {
+		$('.search-form').toggleClass('active')
+	})
+
 	const downBox = $('.header-bottom .down-box');
 	const headerDropList = $('.header__drop-list');
 
@@ -51,43 +56,63 @@ $(document).ready(function () {
 		}
 	);
 
+	// datepicker
+	$.datepicker.regional['cs'] = {
+		closeText: 'Zavřít',
+		prevText: '&#x3c;Dříve',
+		nextText: 'Později&#x3e;',
+		currentText: 'Сейчас',
+		monthNames: ['январь', 'февраль', 'Маршировать', 'апрель', 'Может', 'Июнь', 'Июль', 'Август',
+			'Сентябрь', 'Октябрь', 'ноябрь', 'Декабрь'
+		],
+		monthNamesShort: ['янв', 'фев', 'мар', 'апр', 'май', 'июн', 'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'],
+		dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
+		dayNamesShort: ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'],
+		dayNamesMin: ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'],
+		weekHeader: 'Нед',
+		dateFormat: 'dd MM yy',
+		firstDay: 1,
+		isRTL: false,
+		showMonthAfterYear: false,
+		yearSuffix: ''
+	};
 
-	// // Acordion
-	// $('.accordion').each(function (acIndex, item) {
-	// 	const accordionHeader = item.querySelector('.accordion-header');
-	// 	const accordionContent = item.querySelector('.accordion-content__line');
-	// 	$(accordionContent).addClass('hide-content');
+	$('#datepicker').datepicker({
+		// duration: '',
+		// changeMonth: false,
+		// changeYear: false,
+		// yearRange: '2010:2020',
+		// showTime: true,
+		// time24h: true
+	});
+	// =========
+	$('.time-select').on('change click', function (e) {
+		$('.time-select__box').toggleClass('active');
+	});
 
-	// 	$(accordionHeader).each(function (acHeaderIndex, item) {
-	// 		if (accordionContent.classList.contains('hide-content')) {
-	// 			$(accordionHeader).addClass('active')
-	// 		}
-	// 		$(item).click(function (e) {
-	// 			$(item).toggleClass('active')
-	// 			$(accordionContent).slideToggle();
-	// 		});
-	// 	});
-	// });
+
+	$.datepicker.setDefaults($.datepicker.regional['cs']);
+
 	$('.accordion').each(function (acIndex, item) {
 		const accordionHeader = $(item).find('.accordion-header');
 		const accordionContent = $(item).find('.accordion-content__line');
 
-		accordionContent.addClass('hide-content');
+		accordionContent.slideUp(0);
 
 		accordionHeader.click(function (e) {
 			const currentHeader = $(this);
 			const currentContent = currentHeader.siblings('.accordion-content__line');
 
-			if (currentHeader.hasClass('active')) {
-				currentHeader.removeClass('active');
-				currentContent.slideUp().addClass('hide-content');
-			} else {
-				$('.accordion-header').removeClass('active');
-				$('.accordion-content__line').slideUp().addClass('hide-content');
+			currentHeader.toggleClass('active');
+			currentContent.slideToggle(350)
+			// if (currentHeader.hasClass('active')) {
+			// } else {
+			// 	$('.accordion-header').removeClass('active');
+			// 	$('.accordion-content__line').slideUp()
 
-				currentHeader.addClass('active');
-				currentContent.slideDown().removeClass('hide-content');
-			}
+			// 	currentHeader.addClass('active');
+			// 	currentContent.slideDown()
+			// }
 		});
 	});
 

@@ -164,7 +164,7 @@ body {
 .header-logo {
 	font-family: 'Baloo Da';
 	font-size: 30px;
-	font-weight: 400;
+	font-weight: 600;
 	line-height: 23px;
 	color: var(--white);
 	display: inline-block;
@@ -283,12 +283,74 @@ body {
 	background: var(--white);
 }
 
+.header .search-box {
+	position: relative;
+}
+
+.header .search-box .search-form {
+	position: absolute;
+	top: 35px;
+	left: 50%;
+	transform: translateX(-50%) scaleY(0);
+	z-index: 10;
+	transform-origin: top;
+}
+
+.header .search-box .search-form.active {
+	transform: translateX(-50%) scaleY(1);
+}
+
+.header .search-box .search-input::before {
+	content: "";
+	position: absolute;
+	top: -3px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 8px;
+	height: 8px;
+	background-color: var(--white);
+	transform: rotate(45deg);
+}
+
+.header .search-box .search-input {
+	position: relative;
+}
+
+.header .search-box .search-input svg {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 16px;
+}
+
+.header .search-box .search-input input {
+	border-radius: 5px;
+	background: rgb(255, 255, 255);
+	width: 319px;
+	height: 50px;
+	padding: 16px 14px;
+	box-shadow: 0px 0px 10px rgb(106 106 109);
+	outline: none;
+	border: none;
+	color: var(--midnight-blue);
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 19px;
+}
+
+.header .search-box .search-input input::placeholder {
+	color: var(--midnight-blue);
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 19px;
+}
+
 /* header main */
 .header-midle .nav-item {
 	display: flex;
 	align-items: center;
 	gap: 41px;
-	padding: 19px 0;
+	padding: 17px 0;
 }
 
 .header-midle .nav-item .nav-link {
@@ -315,7 +377,11 @@ body {
 .header-bottom .nav-list {
 	display: flex;
 	color: var(--white);
-	gap: 42px;
+	gap: 45px;
+}
+
+.flex-box .nav-list {
+	gap: 16px;
 }
 
 .header-bottom .nav-link {
@@ -437,7 +503,7 @@ body {
 	display: flex;
 	align-items: center;
 	gap: 4px;
-	margin-bottom: 25px;
+	margin-bottom: 15px;
 }
 
 .hero-section .breadcrumb a {
@@ -519,7 +585,7 @@ body {
 }
 
 .right-sidebar .right-sidebar__box-content {
-	padding: 16px 18px;
+	padding: 12px 18px;
 	display: flex;
 	align-items: center;
 	border-bottom: 1px solid var(--light-periwinkle);
@@ -602,6 +668,99 @@ body {
 	width: 100%;
 }
 
+#ui-datepicker-div {
+	z-index: 999 !important;
+	padding: 0 21px 24px 21px;
+	background-color: var(--lavender);
+	border: none;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.ui-datepicker table {
+	background-color: var(--white);
+	padding: 10px 10px 15px 10px;
+}
+
+.ui-widget-header .ui-icon {
+	background-image: url(../images/icons/black-arrow-down.svg);
+	background-size: 100% 100%;
+	width: 10px;
+	height: 10px;
+	background-position: center;
+}
+
+.ui-datepicker .ui-datepicker-prev {
+	transform: rotate(90deg);
+	left: 5px;
+	width: 10px;
+	height: 10px;
+	top: 15px;
+	cursor: pointer;
+}
+
+.ui-datepicker .ui-datepicker-next:hover,
+.ui-datepicker .ui-datepicker-prev:hover {
+	background-color: transparent;
+}
+
+.time-select__box.active .time-icon {
+	transform: rotate(180deg);
+}
+
+.ui-state-hover,
+.-ui-widget-content .ui-state-nover .ui-widget-header .ui-state-hover {
+	border: none !important;
+	background: none !important;
+	/* color: transparent !important; */
+}
+
+.ui-datepicker .ui-datepicker-next {
+	transform: rotate(-90deg);
+	right: 5px;
+	width: 10px;
+	height: 10px;
+	top: 10px;
+	cursor: pointer;
+}
+
+.ui-datepicker .ui-datepicker-header {
+	background-color: var(--white);
+	border: none;
+}
+
+.time-select__box {
+	position: relative;
+}
+
+.time-icon {
+	position: absolute;
+	top: 50%;
+	right: 24px;
+	transform: translateY(-50%);
+	transform-origin: top;
+}
+
+.ui-datepicker {
+	width: 346px;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+	background-color: transparent;
+	border: none;
+}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+	color: var(--midnight-blue);
+}
+
 .time-select {
 	width: 346px;
 	height: 50px;
@@ -618,6 +777,8 @@ body {
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	position: relative;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
 }
 
 .time-select .arrow-down {
@@ -728,9 +889,9 @@ body {
 	margin-bottom: 0;
 }
 
-.hide-content {
+/* .hide-content {
 	display: none;
-}
+} */
 
 .left-sidebar .accordion-header.active svg {
 	transform: rotate(180deg);
@@ -1484,6 +1645,7 @@ td {
 	position: relative;
 }
 
+
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
@@ -1869,3 +2031,8 @@ input[type="search"]::-webkit-search-results-decoration {
 	font-weight: 300;
 	line-height: 15px;
 }
+
+
+/* media query start */
+
+@media screen and (max-width: 480px) {}

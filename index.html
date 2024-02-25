@@ -5,6 +5,9 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Sport Obzor</title>
+	<!-- datepicker -->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
 	<!-- Onest font file -->
 	<link rel="stylesheet" href="./fonts/onest/stylesheet.css" />
 	<!-- baloo-da -->
@@ -51,7 +54,17 @@
 								</div>
 							</div>
 							<div class="search-box pointer">
-								<img src="images/icons/search.svg" alt="search icon" />
+								<img class="search-btn" src="images/icons/search.svg" alt="search icon" />
+								<div class="search-form">
+									<div class="search-input">
+										<input type="search" name="search" placeholder="Введите запрос">
+										<svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M8.8354 16.0503C4.70652 16.0503 1.35945 12.7615 1.35945 8.69805C1.35945 4.63458 4.70652 1.3392 8.8354 1.3392C12.9643 1.3392 16.312 4.63458 16.312 8.69805C16.312 12.7615 12.9643 16.0503 8.8354 16.0503ZM20.8006 19.8578L15.3792 14.5208C16.7984 12.9781 17.6708 10.9431 17.6708 8.69805C17.6708 3.89279 13.7152 0 8.8354 0C3.95558 0 0 3.89279 0 8.69805C0 13.4967 3.95558 17.3895 8.8354 17.3895C10.9438 17.3895 12.8776 16.6609 14.3966 15.4464L19.8396 20.8031C20.1055 21.0656 20.5354 21.0656 20.8006 20.8031C21.0665 20.547 21.0665 20.1204 20.8006 19.8578Z"
+												fill="#515971" />
+										</svg>
+									</div>
+								</div>
 							</div>
 						</div>
 
@@ -214,12 +227,19 @@
 				<div class="container">
 
 					<div class="left-sidebar">
-						<h2 class="title-text__sm">Футбол: чемпионаты</h2>
+						<h2 class="title-text black">Футбол: чемпионаты</h2>
 
 						<div class="time-box">
-							<select class="time-select">
-								<option value="1">23 января 2024</option>
-							</select>
+
+							<div class="time-select__box">
+								<input class="time-select" type="text" id="datepicker" placeholder="Выбрать дату">
+								<svg class="time-icon" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M0.634412 0.9103C0.439162 1.10556 0.439162 1.42214 0.634412 1.61741L3.95666 4.93963C4.54231 5.52528 5.49171 5.52543 6.07758 4.94003L9.36527 1.65488C9.56053 1.45962 9.56053 1.14304 9.36527 0.947775C9.17001 0.752515 8.85343 0.752515 8.65817 0.947775L5.37216 4.23378C5.17686 4.42908 4.86031 4.42908 4.66506 4.23378L1.34156 0.9103C1.14626 0.71504 0.829712 0.71504 0.634412 0.9103Z"
+										fill="#1F263D" />
+								</svg>
+
+							</div>
 
 							<div class="times">
 								<p class="active">Сейчас</p>
@@ -2063,8 +2083,12 @@
 		</footer>
 	</div>
 
+	<!-- datepicker -->
+
 	<!-- jquery js file -->
 	<script src="./js/jquery.min.js"></script>
+	<!-- jquery ui js -->
+	<script src="./js/jquery-ui.js"></script>
 	<!-- swiper js file -->
 	<script src="./js/swiper-bundle.min.js"></script>
 	<!-- custom js file -->
