@@ -1,12 +1,12 @@
 // script.js
 $(document).ready(function () {
-	const giftBoxCard = $(".gift-box__card");
+	$('.gift-box__card').slideUp(0);
 
 	$(".gift-box__img").click(function () {
-		$(giftBoxCard).toggleClass('open');
+		$('.gift-box__card').slideToggle(350)
 	});
 	$(".close-btn").click(function () {
-		$(giftBoxCard).toggleClass('open');
+		$('.gift-box__card').slideToggle()
 	})
 
 	// header menu
@@ -27,8 +27,9 @@ $(document).ready(function () {
 	// );
 
 	// search
+	$('.search-form').slideUp(0)
 	$('.search-btn').click(function () {
-		$('.search-form').toggleClass('active')
+		$('.search-form').slideToggle(350)
 	})
 
 	const downBox = $('.header-bottom .down-box');
@@ -77,21 +78,35 @@ $(document).ready(function () {
 		yearSuffix: ''
 	};
 
-	$('#datepicker').datepicker({
-		// duration: '',
-		// changeMonth: false,
-		// changeYear: false,
-		// yearRange: '2010:2020',
-		// showTime: true,
-		// time24h: true
-	});
-	// =========
+	$('#datepicker').datepicker();
+
 	$('.time-select').on('change click', function (e) {
 		$('.time-select__box').toggleClass('active');
 	});
 
 
 	$.datepicker.setDefaults($.datepicker.regional['cs']);
+
+	// accordion
+	function truncateText() {
+		$('.accordion-title').each(function () {
+			var $title = $(this);
+			var text = $title.text();
+
+			if ($(window).width() <= 480 && text.length > 25) {
+				$title.text(text.substring(0, 25) + '...');
+			} else {
+				$title.text(text);
+			}
+		});
+	}
+
+	truncateText();
+
+	$(window).resize(function () {
+		truncateText();
+	});
+
 
 	$('.accordion').each(function (acIndex, item) {
 		const accordionHeader = $(item).find('.accordion-header');
@@ -104,15 +119,7 @@ $(document).ready(function () {
 			const currentContent = currentHeader.siblings('.accordion-content__line');
 
 			currentHeader.toggleClass('active');
-			currentContent.slideToggle(350)
-			// if (currentHeader.hasClass('active')) {
-			// } else {
-			// 	$('.accordion-header').removeClass('active');
-			// 	$('.accordion-content__line').slideUp()
-
-			// 	currentHeader.addClass('active');
-			// 	currentContent.slideDown()
-			// }
+			currentContent.slideToggle(350);
 		});
 	});
 
@@ -160,4 +167,12 @@ $(document).ready(function () {
 		});
 	});
 
+
+	// header bottome menu
+	$('.bars-btn').click(function () {
+		$(this).toggleClass('active');
+		$('body').toggleClass('hidden');
+		$('.header-midle').toggleClass('active');
+		$('.header-bottom').toggleClass('active');
+	})
 });

@@ -26,9 +26,18 @@
 		<header class="header">
 			<div class="header-top">
 				<div class="container">
-					<div>
+					<div class="header-logo__box">
 						<a class="header-logo" href="#!">Sport <span>Obzor</span> </a>
 						<p class="header-logo__info">Лучшая спортивная статистика</p>
+					</div>
+
+					<div class="login-box media-block">
+						<img src="images/icons/arrow-icon.svg" alt="arrow-icon" width="21" height="21" />
+						<button class="bars-btn">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
 					</div>
 
 					<div class="header-right">
@@ -232,8 +241,9 @@
 						<div class="time-box">
 
 							<div class="time-select__box">
-								<input class="time-select" type="text" id="datepicker" placeholder="Выбрать дату">
-								<svg class="time-icon" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<input class="time-select" type="text" id="datepicker" placeholder="Выбрать дату" readonly>
+								<svg class="time-icon" width="10" height="6" viewBox="0 0 10 6" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
 									<path
 										d="M0.634412 0.9103C0.439162 1.10556 0.439162 1.42214 0.634412 1.61741L3.95666 4.93963C4.54231 5.52528 5.49171 5.52543 6.07758 4.94003L9.36527 1.65488C9.56053 1.45962 9.56053 1.14304 9.36527 0.947775C9.17001 0.752515 8.85343 0.752515 8.65817 0.947775L5.37216 4.23378C5.17686 4.42908 4.86031 4.42908 4.66506 4.23378L1.34156 0.9103C1.14626 0.71504 0.829712 0.71504 0.634412 0.9103Z"
 										fill="#1F263D" />
@@ -241,7 +251,7 @@
 
 							</div>
 
-							<div class="times">
+							<div class="times media-none">
 								<p class="active">Сейчас</p>
 								<p>Вчера</p>
 								<p>Сегодня</p>
@@ -1671,7 +1681,7 @@
 						<div class="forecasts">
 							<div class="title-box__sm">
 								<h3 class="title-text__sm">Прогнозы</h3>
-								<span>Смотреть все прогнозы</span>
+								<a href="#!" class="media-hiden">Смотреть все прогнозы</a>
 							</div>
 							<div class="forecasts-boxes">
 								<div class="forecasts-box">
@@ -1704,13 +1714,14 @@
 									<span class="forecasts-box__date">24.11.2022</span>
 								</div>
 							</div>
+							<a href="#!" class="media-block">Смотреть все прогнозы</a>
 						</div>
 						<div class="line"></div>
 
 						<div class="media-files">
 							<div class="title-box__sm">
 								<h3 class="title-text__sm">Медиафайлы</h3>
-								<a href="football-video.html">Смотреть все видео</a>
+								<a class="media-hidden" href="football-video.html">Смотреть все видео</a>
 							</div>
 
 							<div class="media-files__boxes">
@@ -1724,6 +1735,8 @@
 									<p>Бразилия — Сербия: прогноз Гусева</p>
 								</div>
 							</div>
+
+							<a class="media-block" href="football-video.html">Смотреть все видео</a>
 						</div>
 						<div class="line"></div>
 
@@ -1999,7 +2012,7 @@
 		<footer class="footer">
 			<div class="footer-top">
 				<div class="container">
-					<div>
+					<div class="header-logo__box">
 						<a class="header-logo" href="#!">Sport <span>Obzor</span> </a>
 						<p class="header-logo__info">Лучшая спортивная статистика</p>
 					</div>
