@@ -2873,7 +2873,7 @@ input[type="search"]::-webkit-search-results-decoration {
 		margin: 27px auto 0 auto;
 	}
 
-	.football-video .media-files__box.media-hiden {
+	.football-video .media-files__box.media-hidden {
 		display: none;
 	}
 }

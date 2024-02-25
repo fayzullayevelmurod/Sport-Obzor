@@ -228,6 +228,13 @@ $(document).ready(function () {
 
 	// read more 
 	$('.read-more__btn').click(function () {
-		$('.media-files__box.media-hiden').slideToggle()
-	})
+		var $this = $(this);
+		if ($this.text() === 'Загрузить еще') {
+			$this.text('Секрет');
+		} else {
+			$this.text('Загрузить еще');
+		}
+		$('.media-files__boxes .read-more').toggleClass('media-hidden');
+	});
+
 });
