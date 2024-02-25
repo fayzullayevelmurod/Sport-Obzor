@@ -893,7 +893,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 
-.left-sidebar .accordion-header.active svg {
+.left-sidebar .accordion-header.active .rotate-icon {
 	transform: rotate(180deg);
 }
 
@@ -2600,6 +2600,15 @@ input[type="search"]::-webkit-search-results-decoration {
 
 	.media-files .media-files__box {
 		height: 160px;
+	}
+
+	.left-sidebar .accordion-title__box {
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.left-sidebar .rotate-icon {
+		margin-left: 15px;
 	}
 }
 
