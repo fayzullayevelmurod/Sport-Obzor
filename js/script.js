@@ -100,27 +100,31 @@ $(document).ready(function () {
 	);
 
 	// datepicker
-	$.datepicker.regional['cs'] = {
-		closeText: 'Zavřít',
-		prevText: '&#x3c;Dříve',
-		nextText: 'Později&#x3e;',
-		currentText: 'Сейчас',
-		monthNames: ['январь', 'февраль', 'Маршировать', 'апрель', 'Может', 'Июнь', 'Июль', 'Август',
-			'Сентябрь', 'Октябрь', 'ноябрь', 'Декабрь'
-		],
-		monthNamesShort: ['янв', 'фев', 'мар', 'апр', 'май', 'июн', 'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'],
-		dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
-		dayNamesShort: ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'],
-		dayNamesMin: ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'],
-		weekHeader: 'Нед',
-		dateFormat: 'dd MM yy',
-		firstDay: 1,
-		isRTL: false,
-		showMonthAfterYear: false,
-		yearSuffix: ''
-	};
+	try {
+		$.datepicker.regional['cs'] = {
+			closeText: 'Zavřít',
+			prevText: '&#x3c;Dříve',
+			nextText: 'Později&#x3e;',
+			currentText: 'Сейчас',
+			monthNames: ['январь', 'февраль', 'Маршировать', 'апрель', 'Может', 'Июнь', 'Июль', 'Август',
+				'Сентябрь', 'Октябрь', 'ноябрь', 'Декабрь'
+			],
+			monthNamesShort: ['янв', 'фев', 'мар', 'апр', 'май', 'июн', 'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'],
+			dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
+			dayNamesShort: ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'],
+			dayNamesMin: ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'],
+			weekHeader: 'Нед',
+			dateFormat: 'dd MM yy',
+			firstDay: 1,
+			isRTL: false,
+			showMonthAfterYear: false,
+			yearSuffix: ''
+		};
 
-	$('#datepicker').datepicker();
+		$('#datepicker').datepicker();
+	} catch (error) {
+		throw error
+	}
 
 	$('.time-select').on('change click', function (e) {
 		$('.time-select__box').toggleClass('active');
