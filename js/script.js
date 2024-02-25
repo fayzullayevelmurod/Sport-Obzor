@@ -24,7 +24,7 @@ $(document).ready(function () {
 	var swiper = new Swiper(".forecasts-swiper", {
 		slidesPerView: 2,
 		spaceBetween: 19,
-		loop: true,
+		// loop: true,
 		navigation: {
 			nextEl: ".button-next1",
 			prevEl: ".button-prev1",
@@ -135,7 +135,7 @@ $(document).ready(function () {
 			var $title = $(this);
 			var text = $title.text();
 
-			if ($(window).width() <= 480 && text.length > 25) {
+			if ($(window).width() <= 480 && text.length > 24) {
 				$title.text(text.substring(0, 25) + '...');
 			} else {
 				$title.text(text);

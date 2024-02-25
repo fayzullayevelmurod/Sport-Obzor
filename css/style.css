@@ -2403,6 +2403,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 	.left-sidebar .accordion-header .accordion-title {
 		margin: 0 6px 0 12px;
+		font-size: 14px;
 	}
 
 	.accordion-title__box>img {
@@ -2434,9 +2435,9 @@ input[type="search"]::-webkit-search-results-decoration {
 		line-height: 44px;
 	}
 
-	.left-sidebar .group-name__box {
+	/* .left-sidebar .group-name__box {
 		justify-content: space-between;
-	}
+	} */
 
 	.left-sidebar .group-name__box p {
 		margin: 0 15px;
@@ -2449,6 +2450,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 	.left-sidebar .accordion-content {
 		align-items: start;
+		position: relative;
 	}
 
 	.left-sidebar .group-name__box .group-number.hidden {
@@ -2602,13 +2604,37 @@ input[type="search"]::-webkit-search-results-decoration {
 		height: 160px;
 	}
 
+	.left-sidebar .rotate-icon {
+		margin-left: 15px;
+	}
+
+	.accordion .accordion-statistik>span {
+		position: absolute;
+		top: 18px;
+		right: 9px;
+	}
+
+	.left-sidebar .group-name__box .group-numbers {
+		margin-left: auto;
+	}
+
+	.left-sidebar .group-name__box .group-number {
+		margin-left: auto;
+	}
+
+	.left-sidebar .group-name__box .group-numbers {
+		gap: 15px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.ui-datepicker {
+		width: 88.9%;
+	}
+
 	.left-sidebar .accordion-title__box {
 		justify-content: space-between;
 		width: 100%;
-	}
-
-	.left-sidebar .rotate-icon {
-		margin-left: 15px;
 	}
 }
 
