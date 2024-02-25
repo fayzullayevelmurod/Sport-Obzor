@@ -1,45 +1,49 @@
 // script.js
 $(document).ready(function () {
 	// swiper
-	var swiper = new Swiper(".media-swiper", {
-		slidesPerView: 2,
-		spaceBetween: 19,
-		loop: true,
-		navigation: {
-			nextEl: ".button-next",
-			prevEl: ".button-prev",
-		},
-		breakpoints: {
-			480: {
-				slidesPerView: 2,
-				spaceBetween: 19,
+	try {
+		var swiper = new Swiper(".media-swiper", {
+			slidesPerView: 2,
+			spaceBetween: 19,
+			loop: true,
+			navigation: {
+				nextEl: ".button-next",
+				prevEl: ".button-prev",
 			},
-			0: {
-				slidesPerView: 1,
-				spaceBetween: 19,
-			},
-		}
-	})
+			breakpoints: {
+				480: {
+					slidesPerView: 2,
+					spaceBetween: 19,
+				},
+				0: {
+					slidesPerView: 1,
+					spaceBetween: 19,
+				},
+			}
+		})
 
-	var swiper = new Swiper(".forecasts-swiper", {
-		slidesPerView: 2,
-		spaceBetween: 19,
-		// loop: true,
-		navigation: {
-			nextEl: ".button-next1",
-			prevEl: ".button-prev1",
-		},
-		breakpoints: {
-			480: {
-				slidesPerView: 2,
-				spaceBetween: 19,
+		var swiper = new Swiper(".forecasts-swiper", {
+			slidesPerView: 2,
+			spaceBetween: 19,
+			// loop: true,
+			navigation: {
+				nextEl: ".button-next1",
+				prevEl: ".button-prev1",
 			},
-			0: {
-				slidesPerView: 1,
-				spaceBetween: 19,
-			},
-		}
-	})
+			breakpoints: {
+				480: {
+					slidesPerView: 2,
+					spaceBetween: 19,
+				},
+				0: {
+					slidesPerView: 1,
+					spaceBetween: 19,
+				},
+			}
+		})
+	} catch (error) {
+		throw error
+	}
 
 
 	$('.gift-box__card').slideUp(0);

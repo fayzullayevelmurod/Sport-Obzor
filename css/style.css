@@ -1441,6 +1441,18 @@ td {
 	gap: 9px;
 }
 
+.team-section.player-statistics__page thead td:first-child {
+	padding: 16px 21px;
+}
+
+.team-section.player-statistics__page thead td {
+	padding: 16px 0;
+}
+
+.team-section.player-statistics__page tbody td {
+	padding: 15px 19px 15px 13px;
+}
+
 .team-section td span {
 	color: var(--gunmetal-blue);
 	font-size: 15px;
@@ -1451,6 +1463,7 @@ td {
 
 .team-section.player-statistics__page td span {
 	font-size: 13px;
+	white-space: nowrap;
 	line-height: 17px;
 }
 
@@ -2103,6 +2116,24 @@ input[type="search"]::-webkit-search-results-decoration {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+
+	.time-box.player-statistics {
+		overflow-x: auto;
+	}
+
+	.time-box.player-statistics::-webkit-scrollbar {
+		height: 0;
+	}
+
+	.time-box.player-statistics .times {
+		flex-wrap: nowrap !important;
+		gap: 15px;
+		margin-left: 0;
+	}
+
+	.time-box.player-statistics .times a {
+		white-space: nowrap;
+	}
 }
 
 @media screen and (max-width: 1120px) {
@@ -2217,6 +2248,20 @@ input[type="search"]::-webkit-search-results-decoration {
 	.time-box .times {
 		margin-left: 18px;
 	}
+
+	.team-section.player-statistics__page thead td {
+		min-width: 70px;
+		width: 100%;
+	}
+
+	.team-section.player-statistics__page {
+		overflow-x: auto;
+		padding-bottom: 19px;
+	}
+
+	.team-section.player-statistics__page::-webkit-scrollbar {
+		height: 5px;
+	}
 }
 
 @media screen and (max-width: 705px) {
@@ -2285,13 +2330,14 @@ input[type="search"]::-webkit-search-results-decoration {
 	}
 
 	.team-section td p {
-		font-size: 12px;
-		line-height: 15px;
+		font-size: 12px !important;
+		line-height: 15px !important;
 	}
 
 	.team-section td span {
-		font-size: 12px;
-		line-height: 14px;
+		font-size: 12px !important;
+		line-height: 14px !important;
+		white-space: nowrap;
 	}
 
 	.team-structure .time-box {
@@ -2311,6 +2357,7 @@ input[type="search"]::-webkit-search-results-decoration {
 	.team-structure .time-box .times a {
 		white-space: nowrap;
 	}
+
 }
 
 .forecasts .media-block,
