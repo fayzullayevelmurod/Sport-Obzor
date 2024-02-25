@@ -294,6 +294,7 @@ body.hidden {
 	transform: translateX(-50%);
 	z-index: 10;
 	transform-origin: top;
+	z-index: 9999;
 }
 
 .header .search-box .search-input::before {
@@ -1078,6 +1079,12 @@ html .ui-button.ui-state-disabled:active {
 	line-height: 15px;
 }
 
+.media-swiper,
+.forecasts-swiper {
+	max-width: 860px;
+	width: 100%;
+}
+
 .media-files .media-files__boxes {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(319px, 1fr));
@@ -1092,7 +1099,7 @@ html .ui-button.ui-state-disabled:active {
 	gap: 21px;
 }
 
-.forecasts .forecasts-boxes .forecasts-box {
+.forecasts .forecasts-box {
 	border-radius: 5px;
 	background: var(--lavender);
 	padding: 20px 30px 27px 26px;
@@ -1163,14 +1170,25 @@ html .ui-button.ui-state-disabled:active {
 .media-files .media-files__box {
 	height: 222px;
 	border-radius: 5px;
-	background-image: url(../images/media-1.png);
-	background-repeat: no-repeat;
 	padding: 0 30px 27px 26px;
 	width: 100%;
 	border-radius: 5px;
 	display: flex;
 	flex-direction: column;
 	justify-content: end;
+	position: relative;
+	z-index: 1;
+}
+
+.media-files .media-files__box .media-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 5px;
+	z-index: -1;
 }
 
 .left-sidebar .pagination-boxes {
@@ -2213,7 +2231,8 @@ input[type="search"]::-webkit-search-results-decoration {
 	.left-sidebar .accordion-content {}
 }
 
-.forecasts .media-block {
+.forecasts .media-block,
+.media-files .media-block {
 	display: none;
 }
 
@@ -2565,4 +2584,46 @@ input[type="search"]::-webkit-search-results-decoration {
 	.footer-bottom {
 		padding: 14px 0;
 	}
+
+	.media-swiper,
+	.forecasts-swiper {
+		max-width: 242px;
+	}
+
+	.media-files .media-files__box {
+		padding: 0 10px 23px 25px;
+	}
+
+	.forecasts .forecasts-box {
+		padding: 14px 19px 18px 23px;
+	}
+
+	.media-files .media-files__box {
+		height: 160px;
+	}
+}
+
+.relative {
+	position: relative;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after,
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+	display: none;
+}
+
+.swiper-button-prev {
+	left: var(--swiper-navigation-sides-offset, -5px);
+}
+
+.swiper-button-next {
+	right: var(--swiper-navigation-sides-offset, -5px);
+}
+
+.swiper-button-prev img,
+.swiper-button-next img {
+	width: 10px;
+	height: 10px;
 }
