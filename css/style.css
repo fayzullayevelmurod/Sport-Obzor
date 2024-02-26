@@ -1315,6 +1315,14 @@ html .ui-button.ui-state-disabled:active {
 	padding-bottom: 22px;
 }
 
+.results-section .results-section__info-title {
+	color: rgb(81, 89, 113);
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 20px;
+	margin-bottom: 17px;
+}
+
 .results-section .results-section__info:last-child {
 	padding-bottom: 0;
 }
@@ -2304,6 +2312,121 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 /* team-overview */
+
+/* bookmakers page */
+.title-info {
+	color: var(--midnight-blue);
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 17px;
+}
+
+.bookmakers-page .title-info {
+	margin: 20px 0 30px 0;
+}
+
+.bookmakers-page .bookmaker-box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--lavender);
+	border-radius: 5px;
+	padding-right: 17px;
+	margin-bottom: 14px;
+}
+
+.bookmakers-page .bookmaker-box:last-child {
+	margin-bottom: 43px;
+}
+
+.bookmakers-page .bookmaker-box__left,
+.bookmakers-page .bookmaker-box__right {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.bookmaker-box .operating-systems,
+.bookmaker-box .comments-box {
+	display: flex;
+	align-items: center;
+	gap: 9px;
+}
+
+.bookmaker-box .comments-box {
+	gap: 7px;
+}
+
+.bookmaker-box .comments-box .comment-number {
+	color: rgb(31, 38, 61);
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 19px;
+}
+
+.bookmaker-box .view-review {
+	color: rgb(81, 89, 113);
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 17px;
+	text-decoration-line: underline;
+}
+
+.bookmaker-box .gift-btn {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	border-radius: 5px;
+	padding: 8px 10px 8px 12px;
+	background: rgb(34, 178, 66);
+}
+
+.bookmaker-box .gift-btn .gift-price {
+	color: rgb(255, 255, 255);
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 18px;
+}
+
+.bookmaker-box .operating-systems a {
+	box-sizing: border-box;
+	border: 1px solid rgb(196, 199, 209);
+	border-radius: 5px;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgb(255, 255, 255);
+}
+
+.bookmakers-page .bookmaker-box__right {
+	gap: 30px;
+}
+
+.bookmakers-page .bookmaker-box .number-box {
+	border-radius: 5px;
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 26px;
+	background: rgb(34, 178, 66);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 56px;
+	height: 56px;
+}
+
+.bookmakers-page .bookmaker-box .number-box.silver {
+	background-color: #285680;
+}
+
+.bookmakers-page .bookmaker-box .number-box.gray {
+	background-color: #8AA4BB;
+}
+
+/* bookmakers-page */
 
 /* footer style */
 .footer {
