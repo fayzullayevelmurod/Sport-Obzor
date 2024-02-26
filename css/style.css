@@ -2481,6 +2481,427 @@ input[type="search"]::-webkit-search-results-decoration {
 	gap: 122px;
 }
 
+
+/* match page */
+.match-page .match-banner {
+	border-radius: 5px;
+	background: rgb(243, 245, 255);
+	padding: 26px 0 38px 0;
+	text-align: center;
+}
+
+.match-page .match-boxes {
+	display: flex;
+	align-items: start;
+	justify-content: center;
+	gap: 90px;
+	margin-top: 24px;
+}
+
+.match-banner .match-time__box {
+	margin-top: 17px;
+}
+
+.match-banner .club-img {
+	width: 129px;
+	height: 129px;
+	text-align: center;
+	background-color: var(--white);
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.match-banner .club-img img {
+	width: 100px;
+	height: 100px;
+}
+
+.match-banner .match-date {
+	color: var(--midnight-blue);
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 19px;
+	margin-bottom: 10px;
+}
+
+.match-banner .club-title {
+	color: rgb(31, 38, 61);
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 19px;
+}
+
+.match-banner .match-box {
+	text-align: center;
+}
+
+.match-banner .match-box .club-name {
+	color: rgb(31, 38, 61);
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 19px;
+	text-decoration-line: underline;
+	margin: 18px 0 8px 0;
+}
+
+.match-banner .match-box p {
+	color: rgb(115, 125, 159);
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 17px;
+	margin-bottom: 10px;
+}
+
+.match-banner .match-box p:last-child {
+	margin-bottom: 0;
+}
+
+.match-banner .time-status {
+	color: rgb(81, 89, 113);
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 17px;
+}
+
+.match-banner .match-time {
+	color: rgb(31, 38, 61);
+	font-size: 50px;
+	font-weight: 900;
+	line-height: 64px;
+}
+
+.match-banner .match-time__box .match-date {
+	color: rgb(81, 89, 113);
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 17px;
+	display: block;
+	margin-bottom: 0;
+}
+
+.match-banner .match-time__box .see-match__btn {
+	color: rgb(255, 255, 255);
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 167px;
+	height: 44px;
+	margin-top: 80px;
+	background: rgb(34, 178, 66);
+}
+
+.match-page .match-table__tbody {
+	height: 230px;
+	overflow-y: auto;
+}
+
+.match-page .match-table__thead {
+	padding: 16px 21px;
+	background-color: var(--lavender);
+	border-radius: 5px;
+	margin-top: 26px;
+	position: relative;
+	z-index: 2;
+}
+
+.match-page .match-table__tbody {
+	border: 1px solid #E7EAF2;
+	border-top: none;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	margin-top: -4px;
+}
+
+.match-page .match-table__tr {
+	padding: 14px 24px;
+	display: flex;
+	align-items: center;
+	gap: 18px;
+	border-bottom: 1px solid rgb(243, 245, 255);
+}
+
+.match-page .match-table__tr:last-child {
+	border-bottom: none;
+}
+
+.match-page .match-table__tr p,
+.match-page .match-table__tr span {
+	color: rgb(81, 89, 113);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+}
+
+.match-page .match-table__tr span {
+	margin-left: 51px;
+}
+
+.match-page .match-table__tr p.info {
+	color: #22B242;
+}
+
+.match-page .match-table__tr p.blue {
+	color: #2196F3;
+}
+
+.match-page .text-box {
+	margin: 30px 0;
+}
+
+.match-page .player-table .player-table__body .player-table__tr {
+	justify-content: space-between;
+	display: flex;
+	align-items: center;
+	padding: 12px 29px 12px 26px;
+}
+
+.match-page .player-table .player-table__header {
+	justify-content: start;
+	display: flex;
+	align-items: center;
+	gap: 14px;
+}
+
+.match-page .player-table .player-table__header p {
+	color: rgb(31, 38, 61);
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 23px;
+	letter-spacing: 0%;
+}
+
+.match-page .player-table .player-img {
+	width: 40px;
+	height: 40px;
+}
+
+.match-page .brazzilya-flag {
+	width: 28px;
+	height: 19px;
+}
+
+.match-page .player-table p {
+	color: rgb(31, 38, 61);
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	letter-spacing: 0%;
+}
+
+.match-page .player-table span {
+	color: rgb(81, 89, 113);
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 17px;
+}
+
+.match-page .player-table .player-table__body .player-table__tr>.flex {
+	align-items: center;
+}
+
+.match-page .player-table__body .player-table__tr .tr-number {
+	color: rgb(34, 178, 66);
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	width: 30px;
+}
+
+.match-page .player-table__body .player-table__tr>.flex img {
+	margin: 0 17px 0 0;
+}
+
+.match-page .match-tables {
+	display: flex;
+	align-items: start;
+	justify-content: space-between;
+	gap: 50px;
+}
+
+.match-page .match-tables>div {
+	width: 50%;
+}
+
+.match-page .results-box__link {
+	color: rgb(34, 178, 66);
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	text-decoration-line: underline;
+}
+
+.match-page .results-boxes__header {
+	background-color: var(--lavender);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 24px 31px 20px 23px;
+}
+
+.match-page .results-boxes__header .club-img {
+	background-color: var(--white);
+	border-radius: 7px;
+	width: 51.73px;
+	height: 51.73px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.match-page .status-bar,
+.match-page .progres-boxes {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.match-page .club-name {
+	color: rgb(31, 38, 61);
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 19px;
+	padding: 0;
+}
+
+.match-page .progres-boxes {
+	color: rgb(255, 255, 255);
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 17px;
+}
+
+.match-page .progres-boxes .progres-info__box {
+	width: 246px;
+	background-color: var(--forest-green);
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	height: 32px;
+	line-height: 32px;
+	padding-left: 15px;
+	margin-bottom: 7px;
+}
+
+.match-page .progres-boxes .progres-silver {
+	text-align: center;
+}
+
+.match-page .progres-boxes .progres-blue {
+	text-align: right;
+}
+
+.match-page .progres-boxes .progres-silver__box {
+	width: 102px;
+	background-color: #9CADBB;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	margin-bottom: 7px;
+}
+
+.match-page .progres-boxes .progres-blue__box {
+	width: 129px;
+	background-color: #2196F3;
+	text-align: right;
+	padding-right: 15px;
+	line-height: 32px;
+	height: 32px;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	margin-bottom: 7px;
+}
+
+.match-page .progres-number {
+	color: rgb(90, 100, 135);
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 17px;
+}
+
+.match-page .title-box__sm {
+	margin: 48px 0 27px 0;
+}
+
+.match-page .statistiks-match .status-bar .progres-number {
+	margin-top: -10px;
+	margin-bottom: 7px;
+}
+
+.match-page .statistiks-match .status-bar {
+	flex-direction: column;
+}
+
+.match-page .result-progres {
+	border-radius: 8px;
+	height: 7px;
+	background: rgb(219, 227, 233);
+	width: 100%;
+}
+
+.match-page .result-progres .result-progres__box.info {
+	width: 225px;
+	height: 100%;
+	background-color: #22B242;
+	margin-left: auto;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.match-page .result-progres .result-progres__box.blue {
+	width: 225px;
+	height: 100%;
+	background-color: #2196F3;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+.match-page .results-boxes .results-box>.flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 12px;
+}
+
+.match-page .statistiks-match .results-boxes .results-box {
+	display: block;
+	padding-bottom: 26px;
+	padding-right: 24px;
+}
+
+.match-page .statistiks-match .results-boxes__header {
+	padding-right: 24px;
+}
+
+.comments-header {
+	padding: 16px 21px;
+	background-color: var(--lavender);
+	border-radius: 5px;
+}
+
+.comments-header p {
+	color: rgb(31, 38, 61);
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 19px;
+}
+
+.comments-section {
+	margin-top: 31px;
+}
+
+.comments-section .comment-img {
+	width: 100%;
+}
+
+/* match page */
+
+
+
 /* footer style */
 .footer {
 	margin-top: 48px;
