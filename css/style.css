@@ -2456,6 +2456,14 @@ input[type="search"]::-webkit-search-results-decoration {
 		margin-left: auto;
 	}
 
+	.player-card {
+		flex-wrap: wrap;
+	}
+
+	.player-card__img {
+		margin: 0 auto;
+	}
+
 }
 
 .forecasts .media-block,
@@ -3031,6 +3039,64 @@ input[type="search"]::-webkit-search-results-decoration {
 	.teams-boxes .team-box img {
 		width: 33px;
 		height: 33px;
+	}
+
+	.player-card__img {
+		width: 236px;
+		height: 220.99px;
+	}
+
+	.player-card {
+		row-gap: 21px;
+	}
+
+	.player-card .player-card__info {
+		margin-left: -20px;
+		margin-right: -20px;
+		padding: 22px 60px;
+	}
+
+	.player-card .card-info__boxes span,
+	.player-card .card-info__boxes p {
+		font-size: 13px;
+		line-height: 17px;
+		margin-bottom: 12px;
+	}
+
+	.card-info__boxes-info-text {
+		font-size: 12px;
+		line-height: 15px;
+		margin-top: 9px;
+	}
+
+	.player-table .player-table__header {
+		padding: 15px;
+		grid-template-columns: 240px 186px 186px;
+		width: 196%;
+	}
+
+	.player-table .player-table__body {
+		width: 196%;
+	}
+
+	.player-table .player-table__body .player-table__tr {
+		grid-template-columns: 232px 186px 186px;
+		padding: 14px 21px;
+	}
+
+	.player-table {
+		overflow-x: scroll;
+		padding-bottom: 26px;
+	}
+
+	.player-table::-webkit-scrollbar {
+		height: 5px;
+	}
+	.player-card .accordion-header  {
+		padding: 11px 16px;
+	}
+	.player-card .accordion-header .accordion-title {
+		margin: 0;
 	}
 }
 
