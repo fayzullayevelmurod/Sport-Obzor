@@ -2428,6 +2428,59 @@ input[type="search"]::-webkit-search-results-decoration {
 
 /* bookmakers-page */
 
+/* review-leadue */
+.review-league .player-statistics .times {
+	gap: 0px;
+	margin-bottom: 28px;
+}
+
+.review-league .banner-small {
+	height: 61px;
+	line-height: 61px;
+	margin-bottom: 0;
+}
+
+.review-league .left-sidebar__section .left-box .title-sm {
+	margin-top: 21px;
+}
+
+.review-league .turnir-table__box .title-sm {
+	margin: 58px 0 22px 0;
+}
+
+.review-league .tournament-table .table-color__status {
+	justify-content: start;
+	gap: 36px;
+}
+
+
+.review-league .turnir-tr:nth-child(odd) {
+	border-radius: 5px;
+	background-color: var(--lavender);
+	border-color: var(--lavender);
+	position: relative;
+	margin-top: -4px;
+}
+
+.review-league .turnir-tr:nth-child(even) {
+	margin-top: -4px;
+}
+
+.review-league .turnir-tr {
+	padding: 16px 105px 16px 21px;
+	display: flex;
+	align-items: center;
+	border-left: 1px solid rgb(234, 236, 246);
+	border-right: 1px solid rgb(234, 236, 246);
+	justify-content: space-between;
+}
+
+.review-league .turnir-tr .flex {
+	display: flex;
+	align-items: center;
+	gap: 122px;
+}
+
 /* footer style */
 .footer {
 	margin-top: 48px;

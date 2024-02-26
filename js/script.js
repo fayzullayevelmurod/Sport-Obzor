@@ -5,7 +5,6 @@ $(document).ready(function () {
 		var swiper = new Swiper(".media-swiper", {
 			slidesPerView: 2,
 			spaceBetween: 19,
-			loop: true,
 			navigation: {
 				nextEl: ".button-next",
 				prevEl: ".button-prev",
@@ -25,7 +24,6 @@ $(document).ready(function () {
 		var swiper = new Swiper(".forecasts-swiper", {
 			slidesPerView: 2,
 			spaceBetween: 19,
-			// loop: true,
 			navigation: {
 				nextEl: ".button-next1",
 				prevEl: ".button-prev1",
@@ -157,13 +155,13 @@ $(document).ready(function () {
 		truncateText();
 	});
 
-	
+
 	$('.accordion').each(function (acIndex, item) {
 		const accordionHeader = $(item).find('.accordion-header');
 		const accordionContent = $(item).find('.accordion-content__line');
 
 		accordionContent.slideUp(0);
-		$('.block-content').slideDown();
+		$('.block-content').slideDown(0);
 		accordionHeader.click(function (e) {
 			const currentHeader = $(this);
 			const currentContent = currentHeader.siblings('.accordion-content__line');
