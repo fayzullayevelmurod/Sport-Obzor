@@ -1961,7 +1961,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .teams-boxes .team-box__info p {
 	font-size: 13px;
-	font-weight: 300;
+	font-weight: 400;
 	color: var(--midnight-blue);
 }
 
@@ -3005,8 +3005,32 @@ input[type="search"]::-webkit-search-results-decoration {
 		display: block;
 		margin-top: 27px;
 	}
-	.tournament-table .media-hidden{
+
+	.tournament-table .media-hidden {
 		display: none;
+	}
+
+	.teams-boxes {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+		row-gap: 10px;
+		column-gap: 8px;
+		margin-top: 22px;
+	}
+
+	.teams-boxes .team-box__info span {
+		font-size: 11px;
+	}
+
+	.teams-boxes .team-box {
+		gap: 11px;
+		padding: 11px;
+		min-height: 72px;
+	}
+
+	.teams-boxes .team-box img {
+		width: 33px;
+		height: 33px;
 	}
 }
 
