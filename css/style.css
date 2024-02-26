@@ -1344,6 +1344,10 @@ td {
 	margin: 22px 0 52px 0;
 }
 
+.tournament-table .select {
+	display: none;
+}
+
 .tournament-table .team-section.last {
 	margin-bottom: 31px;
 }
@@ -1520,6 +1524,11 @@ td {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 18px;
+	padding: 19px 0;
+}
+
+.tournament-table .team-section thead td:first-child {
+	padding-left: 21px;
 }
 
 .tournament-table .team-section td p {
@@ -1541,8 +1550,12 @@ td {
 }
 
 .tournament-table thead td:last-child {
-	padding-right: 26px;
+	padding-right: 25px;
 	text-align: right;
+}
+
+.tournament-table tbody td {
+	padding: 12px 0 19px 0;
 }
 
 .tournament-table tbody td .flex-box {
@@ -1627,6 +1640,7 @@ td {
 	align-items: center;
 	gap: 36px;
 	justify-content: end;
+	padding-bottom: 23px;
 }
 
 .tournament-table .table-color__status .color-status__box {
@@ -2311,6 +2325,19 @@ input[type="search"]::-webkit-search-results-decoration {
 	.team-section.player-statistics__page::-webkit-scrollbar {
 		height: 5px;
 	}
+
+	.tournament-table .team-section {
+		overflow-x: auto;
+		padding-bottom: 20px;
+	}
+
+	.tournament-table tbody td {
+		min-width: 80px;
+	}
+
+	.tournament-table .team-section tbody td:nth-child(2) {
+		min-width: 200px;
+	}
 }
 
 @media screen and (max-width: 705px) {
@@ -2959,6 +2986,27 @@ input[type="search"]::-webkit-search-results-decoration {
 	.searching-results .results-boxes .results-box {
 		position: relative;
 		padding: 12px 10px 12px 11px;
+	}
+
+	.tournament-table .table-color__status {
+		justify-content: start;
+		gap: 28px;
+	}
+
+	.tournament-table .table-color__status .color-status__box {
+		gap: 10px;
+	}
+
+	.tournament-table .title-sm {
+		display: none;
+	}
+
+	.tournament-table .select {
+		display: block;
+		margin-top: 27px;
+	}
+	.tournament-table .media-hidden{
+		display: none;
 	}
 }
 
