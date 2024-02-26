@@ -157,13 +157,13 @@ $(document).ready(function () {
 		truncateText();
 	});
 
-
+	
 	$('.accordion').each(function (acIndex, item) {
 		const accordionHeader = $(item).find('.accordion-header');
 		const accordionContent = $(item).find('.accordion-content__line');
 
 		accordionContent.slideUp(0);
-
+		$('.block-content').slideDown();
 		accordionHeader.click(function (e) {
 			const currentHeader = $(this);
 			const currentContent = currentHeader.siblings('.accordion-content__line');

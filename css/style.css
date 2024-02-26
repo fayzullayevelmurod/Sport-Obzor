@@ -2098,6 +2098,213 @@ input[type="search"]::-webkit-search-results-decoration {
 
 /* player-card page end */
 
+/* team-overview */
+/* team-overview__boxes */
+.team-overview .team-overview__boxes {
+	gap: 16px;
+	display: flex;
+	margin: 24px 0;
+}
+
+.team-overview .team-overview__box {
+	border-radius: 5px;
+	background: rgb(243, 245, 255);
+	padding: 26px 16px 33px 19px;
+	width: 100%;
+	display: flex;
+	gap: 27px;
+	align-items: start;
+}
+
+.team-overview__boxes .team-img {
+	height: 237px;
+}
+
+.team-overview .team-overview__box span,
+.team-overview .team-overview__box p {
+	color: var(--midnight-blue);
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 19px;
+	display: block;
+	margin-bottom: 28px;
+	white-space: nowrap;
+}
+
+.team-overview .team-overview__box p {
+	font-weight: 600;
+}
+
+.team-overview .team-boxes {
+	gap: 9px;
+	display: flex;
+}
+
+.team-overview .teams-card {
+	width: 100%;
+}
+
+
+.teams-card .teams-box {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	border: 1px solid rgb(215, 218, 229);
+	border-radius: 5px;
+	background: rgb(255, 255, 255);
+	padding: 8px 10px;
+	margin-bottom: 9px;
+	width: 100%;
+}
+
+.teams-card .teams-box img {
+	width: 13px;
+	height: 13px;
+}
+
+.team-overview .team-overview__box .teams-name {
+	margin-bottom: 0;
+	color: rgb(31, 38, 61);
+	font-family: Onest;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 17px;
+	white-space: nowrap;
+}
+
+.left-sidebar__section {
+	display: flex;
+	gap: 27px;
+	justify-content: space-between;
+}
+
+.left-sidebar__section .left-box .title-sm {
+	margin: 25px 0 22px 0;
+}
+
+.team-overview .left-box {
+	max-width: 539px;
+	width: 100%;
+}
+
+.team-overview .right-box {
+	max-width: 289px;
+	width: 100%;
+}
+
+.team-overview .team-section thead td:nth-child(3),
+.team-overview .team-section thead td:nth-child(4),
+.team-overview .team-section thead td:nth-child(5),
+.team-overview .team-section thead td:nth-child(6),
+.team-overview .team-section thead td:nth-child(7),
+.team-overview .team-section thead td:nth-child(8) {
+	width: 9%;
+}
+
+.team-overview .team-section td p {
+	font-size: 13px;
+}
+
+.team-overview .time-box .times {
+	gap: 45px;
+}
+
+.team-overview .tournament-table .select {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+}
+
+.team-overview .team-section {
+	margin-bottom: 11px;
+}
+
+.team-overview .team-section thead td:nth-child(2) {
+	padding-left: 20px;
+}
+
+.team-overview .team-section tbody td:nth-child(2) {
+	padding-left: 20px;
+}
+
+.team-overview .tournament-table .table-color__status {
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 11px;
+	padding-bottom: 37px;
+}
+
+.team-overview .tournament-table .table-color__status .wraning {
+	background-color: #FDC22B;
+}
+
+.team-overview .tournament-table .table-color__status .red-50 {
+	background-color: #DE6D6D;
+}
+
+.team-overview .player-table__header {
+	background-color: var(--lavender);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 16px 21px;
+}
+
+.team-overview .player-table .player-table__header p.active {
+	opacity: 1;
+}
+
+.team-overview .player-table .player-table__header p {
+	font-weight: 400;
+	opacity: 0.4;
+}
+
+.team-overview .player-table p {
+	color: rgb(31, 38, 61);
+	font-family: Onest;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	letter-spacing: 0%;
+	text-align: left;
+}
+
+.team-overview .player-table__body span {
+	color: rgb(81, 89, 113);
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 17px;
+}
+
+.team-overview .player-table__body .player-table__tr {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 12px 18px;
+	border-bottom: 1px solid #EAECF6;
+}
+
+.team-overview .player-table__body .player-table__tr:last-child {
+	border-bottom: none;
+}
+
+.team-overview .player-table__tr>.flex {
+	display: flex;
+	align-items: center;
+	gap: 17px;
+}
+
+.team-overview .player-table .player-img {
+	width: 40px;
+	height: 40px;
+}
+
+.team-overview .right-box .title-sm {
+	margin-bottom: 22px;
+}
+
+/* team-overview */
+
 /* footer style */
 .footer {
 	margin-top: 48px;
@@ -3092,9 +3299,11 @@ input[type="search"]::-webkit-search-results-decoration {
 	.player-table::-webkit-scrollbar {
 		height: 5px;
 	}
-	.player-card .accordion-header  {
+
+	.player-card .accordion-header {
 		padding: 11px 16px;
 	}
+
 	.player-card .accordion-header .accordion-title {
 		margin: 0;
 	}

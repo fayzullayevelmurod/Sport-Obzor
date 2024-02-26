@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sport Obzor</title>
+  <!-- datepicker -->
+  <link rel="stylesheet" href="./css/jquery-ui.css">
+  <!-- Onest font file -->
+  <link rel="stylesheet" href="./fonts/onest/stylesheet.css" />
+  <!-- baloo-da -->
+  <link rel="stylesheet" href="./fonts/baloo-da/stylesheet.css" />
+  <!-- swiper css -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <!-- normalize css -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- custom css file -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- header -->
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="header-logo__box">
+            <a class="header-logo" href="#!">Sport <span>Obzor</span> </a>
+            <p class="header-logo__info">Лучшая спортивная статистика</p>
+          </div>
+
+          <div class="login-box media-block">
+            <img src="images/icons/arrow-icon.svg" alt="arrow-icon" width="21" height="21" />
+            <button class="bars-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+
+          <div class="header-right">
+            <div class="header-bukmekr__box">
+              <div class="bookmaker-rating">
+                <img class="pointer" src="./images/icons/star-icon.svg" alt="star-icon" width="21" height="21" />
+                <p class="bookmaker-rating__text">Рейтинг букмекеров</p>
+              </div>
+              <a class="freebet-btn" href="#!">Фрибет 2000 ₽</a>
+              <div class="gift-box pointer">
+                <img class="gift-box__img" src="images/icons/gift-box.svg" alt="gift-box" width="21" height="21" />
+
+                <div class="gift-box__card">
+                  <div class="gift-content">
+                    <img class="up-arrow" src="images/icons/up-arrow.svg" alt="up arrow-icon" />
+                    <button class="close-btn pointer">
+                      <img src="images/icons/close-icon.svg" alt="close icon" />
+                    </button>
+                    <img src="images/mosbet.png" alt="mosbet" width="61" height="12" />
+                    <p>Бонус 35000₽ по промокоду BEST365</p>
+                    <a class="take-btn" href="#!">ЗАБРАТЬ</a>
+                  </div>
+                </div>
+              </div>
+              <div class="search-box pointer">
+                <img class="search-btn" src="images/icons/search.svg" alt="search icon" />
+                <div class="search-form">
+                  <div class="search-input">
+                    <input type="search" name="search" placeholder="Введите запрос">
+                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.8354 16.0503C4.70652 16.0503 1.35945 12.7615 1.35945 8.69805C1.35945 4.63458 4.70652 1.3392 8.8354 1.3392C12.9643 1.3392 16.312 4.63458 16.312 8.69805C16.312 12.7615 12.9643 16.0503 8.8354 16.0503ZM20.8006 19.8578L15.3792 14.5208C16.7984 12.9781 17.6708 10.9431 17.6708 8.69805C17.6708 3.89279 13.7152 0 8.8354 0C3.95558 0 0 3.89279 0 8.69805C0 13.4967 3.95558 17.3895 8.8354 17.3895C10.9438 17.3895 12.8776 16.6609 14.3966 15.4464L19.8396 20.8031C20.1055 21.0656 20.5354 21.0656 20.8006 20.8031C21.0665 20.547 21.0665 20.1204 20.8006 19.8578Z"
+                        fill="#515971" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="login-box pointer">
+              <img src="images/icons/arrow-icon.svg" alt="arrow-icon" width="21" height="21" />
+              <p class="login-text">Войти</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-midle">
+        <div class="container">
+          <ul class="nav-item">
+            <li class="nav-list">
+              <a class="nav-link active" href="#!">Футбол</a>
+            </li>
+            <li class="nav-list">
+              <a class="nav-link" href="#!">Хоккей</a>
+            </li>
+            <li class="nav-list">
+              <a class="nav-link" href="tenis.html">Теннис</a>
+            </li>
+            <li class="nav-list">
+              <a class="nav-link" href="#!">Баскетбол</a>
+            </li>
+            <li class="nav-list">
+              <a class="nav-link" href="#!">Волейбол</a>
+            </li>
+            <li class="nav-list">
+              <a class="nav-link" href="#!">Единоборства</a>
+            </li>
+            <li class="nav-list">
+              <a class="nav-link" href="#!">Киберспорт</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="header-bottom">
+        <div class="container">
+          <div class="header-nav__sublist">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a class="nav-link active" href="#!">Матчи</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">Прогнозы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#!">Статьи</a>
+              </li>
+            </ul>
+
+            <div class="flex-box first">
+              <ul class="nav-list">
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">РПЛ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">ЛЧ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">ЛЕ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">ЧМ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">АПЛ</a>
+                </li>
+              </ul>
+              <div class="down-box">
+                <img src="images/icons/arrow-down.svg" alt="arrow-down" />
+              </div>
+            </div>
+
+            <div class="flex-box">
+              <ul class="nav-list">
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">ПСЖ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Спартак</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Зенит</a>
+                </li>
+              </ul>
+              <div class="down-box">
+                <img src=" images/icons/arrow-down.svg" alt="arrow-down" />
+              </div>
+            </div>
+          </div>
+          <div class="header__drop-list">
+            <div class="container">
+              <ul class="drop-list-nav__column">
+                <li class="drop-list-nav__item"><a href="#!" class="drop-list-nav__link">Лига чемпионов</a></li>
+                <li class="drop-list-nav__item"><a href="#!" class="drop-list-nav__link">Лига Европы</a></li>
+                <li class="drop-list-nav__item"><a href="#!" class="drop-list-nav__link">Лига конференций</a></li>
+                <li class="drop-list-nav__item"><a href="#!" class="drop-list-nav__link">Лига Наций</a></li>
+              </ul>
+              <ul class="drop-list-nav__column">
+                <li class="drop-list-nav__item"><a href="#!" class="drop-list-nav__link">Россия. РПЛ</a></li>
+                <li class="drop-list-nav__item"><a href="#!" class="drop-list-nav__link">Россия. ФНЛ</a></li>
+                <li class="drop-list-nav__item"><a href="#!" class="drop-list-nav__link">Кубок России</a></li>
+                <li class="drop-list-nav__item"><a href="#!" class="drop-list-nav__link">Китай. Суперлига</a></li>
+              </ul>
+              <ul class="drop-list-nav__column">
+                <li class="drop-list-nav__item"><a href="#!" class="drop-list-nav__link">Англия. Премьер-лига</a>
+                </li>
+                <li class="drop-list-nav__item"><a href="#!" class="drop-list-nav__link">Англия. Чемпионшип</a></li>
+                <li class="drop-list-nav__item"><a href="#!" class="drop-list-nav__link">Бельгия. Про-Лига</a></li>
+                <li class="drop-list-nav__item"><a href="#!" class="drop-list-nav__link">Германия. Бундеслига</a>
+                </li>
+              </ul>
+              <ul class="drop-list-nav__column">
+                <li class="drop-list-nav__item"><a href="#!" class="drop-list-nav__link">Испания. Примера</a></li>
+                <li class="drop-list-nav__item"><a href="#!" class="drop-list-nav__link">Италия. Серия A</a></li>
+                <li class="drop-list-nav__item"><a href="#!" class="drop-list-nav__link">Франция. Лига 1</a></li>
+                <li class="drop-list-nav__item"><a href="#!" class="drop-list-nav__link">Португалии.
+                    Примейра-лига</a></li>
+              </ul>
+              <ul class="drop-list-nav__column">
+                <li class="drop-list-nav__item"><a href="/soccer/league/79" class="drop-list-nav__link">Беларусь.
+                    Премьер-лига</a>
+                </li>
+                <li class="drop-list-nav__item"><a href="/soccer/league/905" class="drop-list-nav__link">Казахстан.
+                    Премьер-лига</a>
+                </li>
+                <li class="drop-list-nav__item"><a href="/soccer/league/151" class="drop-list-nav__link">Украина.
+                    Премьер-лига</a>
+                </li>
+                <li class="drop-list-nav__item"><a href="/soccer/league/215" class="drop-list-nav__link">Турция.
+                    Суперлига</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main class="main">
+      <!-- hero section -->
+      <section class="hero-section">
+        <div class="container">
+          <div class="banner">
+            <h5>Баннер</h5>
+          </div>
+
+          <div class="breadcrumb">
+            <a href="index.html">Футбол —</a>
+            <a href="tenis.html">Европа —</a>
+            <a>Лига чемпионов УЕФА</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="sidebars-section team-overview">
+        <div class="container">
+
+          <div class="left-sidebar">
+            <h3 class="title-text__sm">
+              Обзор команды
+              <span>Ювентус</span>
+            </h3>
+
+            <div class="time-box">
+              <div class="times">
+                <a class="active-text" href="#!">Обзор</a>
+                <a href="#!">Расписание</a>
+                <a href="#!">Результаты</a>
+                <a href="#!">Состав</a>
+                <a href="#!">Статистика игроков</a>
+                <a href="#!">Видео</a>
+              </div>
+            </div>
+
+            <div class="team-overview__boxes">
+              <img src="images/juentus-logo.png" alt="juentus-logo" class="team-img" />
+              <div class="team-overview__box">
+                <div class="team-info">
+                  <span>Полное название:</span>
+                  <span>Стадион:</span>
+                  <span>Соревнования:</span>
+                </div>
+                <div class="teams-card">
+                  <p>Ювентус</p>
+                  <p>Альянц Стадиум</p>
+                  <div class="team-boxes">
+                    <div class="teams-box">
+                      <img src="images/icons/serie-logo.svg" alt="serbiya-logo">
+                      <p class="teams-name">Италия - Серия А</p>
+                    </div>
+                    <div class="teams-box">
+                      <img src="images/icons/serie-logo.svg" alt="serbiya-logo">
+                      <p class="teams-name">Европа - Товарищеские матчи</p>
+                    </div>
+                  </div>
+                  <div class="teams-box">
+                    <img src="images/icons/serie-logo.svg" alt="serbiya-logo">
+                    <p class="teams-name">Международные клубные товарищеские матчи</p>
+                  </div>
+                  <div class="team-boxes">
+                    <div class="teams-box">
+                      <img src="images/icons/serie-logo.svg" alt="serbiya-logo">
+                      <p class="teams-name">Италия - Серия А</p>
+                    </div>
+                    <div class="teams-box">
+                      <img src="images/icons/serie-logo.svg" alt="serbiya-logo">
+                      <p class="teams-name">Европа - Товарищеские матчи</p>
+                    </div>
+                  </div>
+                  <div class="teams-box">
+                    <img src="images/icons/serie-logo.svg" alt="serbiya-logo">
+                    <p class="teams-name">Международные клубные товарищеские матчи</p>
+                  </div>
+                  <div class="team-boxes">
+                    <div class="teams-box">
+                      <img src="images/icons/serie-logo.svg" alt="serbiya-logo">
+                      <p class="teams-name">Италия - Серия А</p>
+                    </div>
+                    <div class="teams-box">
+                      <img src="images/icons/serie-logo.svg" alt="serbiya-logo">
+                      <p class="teams-name">Европа - Товарищеские матчи</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion">
+              <div class="accordion-header active">
+                <div class="accordion-title__box">
+                  <img src="images/championat-logo.svg" alt="championat-logo" width="36" height="20">
+                  <h4 class="accordion-title">5 тур</h4>
+                  <svg width="18" height="18" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6.24642 3.28161C7.24917 1.48275 7.75053 0.583313 8.50016 0.583313C9.24979 0.583313 9.75115 1.48274 10.7539 3.28161L11.0133 3.74699C11.2983 4.25817 11.4407 4.51377 11.663 4.68241C11.8851 4.85105 12.1617 4.91365 12.7151 5.03885L13.2189 5.15284C15.1661 5.59342 16.1397 5.81371 16.3714 6.5586C16.603 7.30345 15.9393 8.07968 14.6118 9.63198L14.2683 10.0336C13.8911 10.4747 13.7024 10.6953 13.6176 10.9682C13.5328 11.241 13.5613 11.5353 13.6183 12.1239L13.6702 12.6597C13.8709 14.7309 13.9713 15.7664 13.3649 16.2268C12.7584 16.6872 11.8468 16.2674 10.0236 15.428L9.55189 15.2108C9.03383 14.9723 8.77479 14.8529 8.50016 14.8529C8.22553 14.8529 7.9665 14.9723 7.44843 15.2108L6.97676 15.428C5.15354 16.2674 4.24193 16.6872 3.63549 16.2268C3.02905 15.7664 3.1294 14.7309 3.33011 12.6597L3.38202 12.1239C3.43906 11.5353 3.46758 11.241 3.38272 10.9682C3.29787 10.6953 3.10925 10.4747 2.73202 10.0336L2.38858 9.63198C1.06107 8.07968 0.397313 7.30345 0.628955 6.5586C0.860597 5.81371 1.83422 5.59342 3.78147 5.15284L4.28524 5.03885C4.83859 4.91365 5.11526 4.85105 5.33741 4.68241C5.55956 4.51377 5.70204 4.25818 5.98699 3.74699L6.24642 3.28161Z"
+                      fill="#FFF"></path>
+                  </svg>
+                </div>
+                <svg class="rotate-icon" width="10" height="6" viewBox="0 0 10 6" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0.634412 0.9103C0.439162 1.10556 0.439162 1.42214 0.634412 1.61741L3.95666 4.93963C4.54231 5.52528 5.49171 5.52543 6.07758 4.94003L9.36527 1.65488C9.56053 1.45962 9.56053 1.14304 9.36527 0.947775C9.17001 0.752515 8.85343 0.752515 8.65817 0.947775L5.37216 4.23378C5.17686 4.42908 4.86031 4.42908 4.66506 4.23378L1.34156 0.9103C1.14626 0.71504 0.829712 0.71504 0.634412 0.9103Z"
+                    fill="#1F263D"></path>
+                </svg>
+              </div>
+              <div class="accordion-content__line block-content">
+                <div class="accordion-content">
+                  <div class="accordion-time">
+                    <div class="accordion-time__box">
+                      <svg class="star-icon" width="15" height="15" viewBox="0 0 17 17" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.24642 3.28161C7.24917 1.48275 7.75053 0.583313 8.50016 0.583313C9.24979 0.583313 9.75115 1.48274 10.7539 3.28161L11.0133 3.74699C11.2983 4.25817 11.4407 4.51377 11.663 4.68241C11.8851 4.85105 12.1617 4.91365 12.7151 5.03885L13.2189 5.15284C15.1661 5.59342 16.1397 5.81371 16.3714 6.5586C16.603 7.30345 15.9393 8.07968 14.6118 9.63198L14.2683 10.0336C13.8911 10.4747 13.7024 10.6953 13.6176 10.9682C13.5328 11.241 13.5613 11.5353 13.6183 12.1239L13.6702 12.6597C13.8709 14.7309 13.9713 15.7664 13.3649 16.2268C12.7584 16.6872 11.8468 16.2674 10.0236 15.428L9.55189 15.2108C9.03383 14.9723 8.77479 14.8529 8.50016 14.8529C8.22553 14.8529 7.9665 14.9723 7.44843 15.2108L6.97676 15.428C5.15354 16.2674 4.24193 16.6872 3.63549 16.2268C3.02905 15.7664 3.1294 14.7309 3.33011 12.6597L3.38202 12.1239C3.43906 11.5353 3.46758 11.241 3.38272 10.9682C3.29787 10.6953 3.10925 10.4747 2.73202 10.0336L2.38858 9.63198C1.06107 8.07968 0.397313 7.30345 0.628955 6.5586C0.860597 5.81371 1.83422 5.59342 3.78147 5.15284L4.28524 5.03885C4.83859 4.91365 5.11526 4.85105 5.33741 4.68241C5.55956 4.51377 5.70204 4.25818 5.98699 3.74699L6.24642 3.28161Z"
+                          fill="#FFC01E"></path>
+                      </svg>
+                      <span class="time">29.11.2024</span>
+                    </div>
+                    <div class="group-name">
+                      <div class="group-name__box">
+                        <img src="images/usg-logo.png" alt="" width="21" height="21">
+                        <p>Сумсунспор</p>
+                        <span class="group-number">-</span>
+                      </div>
+                      <div class="group-name__box">
+                        <img src=" images/torpedo-moscow.png" alt="" width="21" height="21">
+                        <p>Кайсериспор</p>
+                        <span class="group-number">-</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-statistik">
+                    <span class="completed-text felx">
+                      2-ой тайм, 76′
+                      <img src="images/icons/play-icon.svg" alt="play icon" width="10" height="11">
+                    </span>
+                  </div>
+                </div>
+
+                <div class="accordion-content">
+                  <div class="accordion-time">
+                    <div class="accordion-time__box">
+                      <svg class="star-icon" width="15" height="15" viewBox="0 0 17 17" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.24642 3.28161C7.24917 1.48275 7.75053 0.583313 8.50016 0.583313C9.24979 0.583313 9.75115 1.48274 10.7539 3.28161L11.0133 3.74699C11.2983 4.25817 11.4407 4.51377 11.663 4.68241C11.8851 4.85105 12.1617 4.91365 12.7151 5.03885L13.2189 5.15284C15.1661 5.59342 16.1397 5.81371 16.3714 6.5586C16.603 7.30345 15.9393 8.07968 14.6118 9.63198L14.2683 10.0336C13.8911 10.4747 13.7024 10.6953 13.6176 10.9682C13.5328 11.241 13.5613 11.5353 13.6183 12.1239L13.6702 12.6597C13.8709 14.7309 13.9713 15.7664 13.3649 16.2268C12.7584 16.6872 11.8468 16.2674 10.0236 15.428L9.55189 15.2108C9.03383 14.9723 8.77479 14.8529 8.50016 14.8529C8.22553 14.8529 7.9665 14.9723 7.44843 15.2108L6.97676 15.428C5.15354 16.2674 4.24193 16.6872 3.63549 16.2268C3.02905 15.7664 3.1294 14.7309 3.33011 12.6597L3.38202 12.1239C3.43906 11.5353 3.46758 11.241 3.38272 10.9682C3.29787 10.6953 3.10925 10.4747 2.73202 10.0336L2.38858 9.63198C1.06107 8.07968 0.397313 7.30345 0.628955 6.5586C0.860597 5.81371 1.83422 5.59342 3.78147 5.15284L4.28524 5.03885C4.83859 4.91365 5.11526 4.85105 5.33741 4.68241C5.55956 4.51377 5.70204 4.25818 5.98699 3.74699L6.24642 3.28161Z"
+                          fill="#F3F5FF"></path>
+                      </svg>
+                      <span class="time">17:00</span>
+                    </div>
+                    <div class="group-name">
+                      <div class="group-name__box">
+                        <img src="images/usg-logo.png" alt="" width="21" height="21">
+                        <p>Сумсунспор</p>
+                        <span class="group-number">1</span>
+                      </div>
+                      <div class="group-name__box">
+                        <img src=" images/torpedo-moscow.png" alt="" width="21" height="21">
+                        <p>Кайсериспор</p>
+                        <span class="group-number">0</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-statistik">
+                    <span class="break-text">Перерыв</span>
+                  </div>
+                </div>
+
+                <div class="accordion-content">
+                  <div class="accordion-time">
+                    <div class="accordion-time__box">
+                      <svg class="star-icon" width="15" height="15" viewBox="0 0 17 17" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M6.24642 3.28161C7.24917 1.48275 7.75053 0.583313 8.50016 0.583313C9.24979 0.583313 9.75115 1.48274 10.7539 3.28161L11.0133 3.74699C11.2983 4.25817 11.4407 4.51377 11.663 4.68241C11.8851 4.85105 12.1617 4.91365 12.7151 5.03885L13.2189 5.15284C15.1661 5.59342 16.1397 5.81371 16.3714 6.5586C16.603 7.30345 15.9393 8.07968 14.6118 9.63198L14.2683 10.0336C13.8911 10.4747 13.7024 10.6953 13.6176 10.9682C13.5328 11.241 13.5613 11.5353 13.6183 12.1239L13.6702 12.6597C13.8709 14.7309 13.9713 15.7664 13.3649 16.2268C12.7584 16.6872 11.8468 16.2674 10.0236 15.428L9.55189 15.2108C9.03383 14.9723 8.77479 14.8529 8.50016 14.8529C8.22553 14.8529 7.9665 14.9723 7.44843 15.2108L6.97676 15.428C5.15354 16.2674 4.24193 16.6872 3.63549 16.2268C3.02905 15.7664 3.1294 14.7309 3.33011 12.6597L3.38202 12.1239C3.43906 11.5353 3.46758 11.241 3.38272 10.9682C3.29787 10.6953 3.10925 10.4747 2.73202 10.0336L2.38858 9.63198C1.06107 8.07968 0.397313 7.30345 0.628955 6.5586C0.860597 5.81371 1.83422 5.59342 3.78147 5.15284L4.28524 5.03885C4.83859 4.91365 5.11526 4.85105 5.33741 4.68241C5.55956 4.51377 5.70204 4.25818 5.98699 3.74699L6.24642 3.28161Z"
+                          fill="#F3F5FF"></path>
+                      </svg>
+                      <span class="time">17:00</span>
+                    </div>
+                    <div class="group-name">
+                      <div class="group-name__box">
+                        <img src="images/usg-logo.png" alt="" width="21" height="21">
+                        <p>Сумсунспор</p>
+                        <span class="group-number">-</span>
+                      </div>
+                      <div class="group-name__box">
+                        <img src=" images/torpedo-moscow.png" alt="" width="21" height="21">
+                        <p>Кайсериспор</p>
+                        <span class="group-number">-</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-statistik">
+                    <span class="completed-text">Завершен</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="left-sidebar__section tournament-table">
+              <div class="left-box">
+                <select class="select" name="Выбрать команду">
+                  <option value="" selected disabled hidden>Италия - Серия А</option>
+                  <option value="Локомотив">Италия - Серия А</option>
+                  <option value="HTML">Спартак</option>
+                  <option value="Зенит">Зенит</option>
+                  <option value="Андерлехт">Андерлехт</option>
+                  <option value="Юнион">Юнион</option>
+                </select>
+                <h4 class="title-sm">Таблица чемпионата Италии по футболу</h4>
+                <div class="team-section">
+                  <table>
+                    <thead>
+                      <td>Место</td>
+                      <td>Команда</td>
+                      <td>И</td>
+                      <td>В</td>
+                      <td>Н</td>
+                      <td>П</td>
+                      <td>З-П</td>
+                      <td>Очков</td>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="flex-box">
+                            <div class="circle red"></div>
+                            <p>1</p>
+                          </div>
+                        </td>
+                        <td>
+                          <img src="images/manchestr-logo.svg" alt="">
+                          <p class="club-name">Манчестер Юнайтед</p>
+                        </td>
+                        <td>
+                          <p>3</p>
+                        </td>
+                        <td>
+                          <p>4</p>
+                        </td>
+                        <td>
+                          <p>3</p>
+                        </td>
+                        <td>
+                          <p>3</p>
+                        </td>
+                        <td>
+                          <p>12-16</p>
+                        </td>
+                        <td>
+                          <p>16</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="flex-box">
+                            <div class="circle info"></div>
+                            <p>1</p>
+                          </div>
+                        </td>
+                        <td>
+                          <img src="images/manchestr-logo.svg" alt="">
+                          <p class="club-name">Манчестер Юнайтед</p>
+                        </td>
+                        <td>
+                          <p>3</p>
+                        </td>
+                        <td>
+                          <p>4</p>
+                        </td>
+                        <td>
+                          <p>3</p>
+                        </td>
+                        <td>
+                          <p>3</p>
+                        </td>
+                        <td>
+                          <p>12-16</p>
+                        </td>
+                        <td>
+                          <p>16</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="flex-box">
+                            <div class="circle red"></div>
+                            <p>1</p>
+                          </div>
+                        </td>
+                        <td>
+                          <img src="images/manchestr-logo.svg" alt="">
+                          <p class="club-name">Манчестер Юнайтед</p>
+                        </td>
+                        <td>
+                          <p>3</p>
+                        </td>
+                        <td>
+                          <p>4</p>
+                        </td>
+                        <td>
+                          <p>3</p>
+                        </td>
+                        <td>
+                          <p>3</p>
+                        </td>
+                        <td>
+                          <p>12-16</p>
+                        </td>
+                        <td>
+                          <p>16</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="flex-box">
+                            <div class="circle info"></div>
+                            <p>1</p>
+                          </div>
+                        </td>
+                        <td>
+                          <img src="images/manchestr-logo.svg" alt="">
+                          <p class="club-name">Манчестер Юнайтед</p>
+                        </td>
+                        <td>
+                          <p>3</p>
+                        </td>
+                        <td>
+                          <p>4</p>
+                        </td>
+                        <td>
+                          <p>3</p>
+                        </td>
+                        <td>
+                          <p>3</p>
+                        </td>
+                        <td>
+                          <p>12-16</p>
+                        </td>
+                        <td>
+                          <p>16</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="flex-box">
+                            <div class="circle red"></div>
+                            <p>1</p>
+                          </div>
+                        </td>
+                        <td>
+                          <img src="images/manchestr-logo.svg" alt="">
+                          <p class="club-name">Манчестер Юнайтед</p>
+                        </td>
+                        <td>
+                          <p>3</p>
+                        </td>
+                        <td>
+                          <p>4</p>
+                        </td>
+                        <td>
+                          <p>3</p>
+                        </td>
+                        <td>
+                          <p>3</p>
+                        </td>
+                        <td>
+                          <p>12-16</p>
+                        </td>
+                        <td>
+                          <p>16</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="flex-box">
+                            <div class="circle info"></div>
+                            <p>1</p>
+                          </div>
+                        </td>
+                        <td>
+                          <img src="images/manchestr-logo.svg" alt="">
+                          <p class="club-name">Манчестер Юнайтед</p>
+                        </td>
+                        <td>
+                          <p>3</p>
+                        </td>
+                        <td>
+                          <p>4</p>
+                        </td>
+                        <td>
+                          <p>3</p>
+                        </td>
+                        <td>
+                          <p>3</p>
+                        </td>
+                        <td>
+                          <p>12-16</p>
+                        </td>
+                        <td>
+                          <p>16</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="flex-box">
+                            <div class="circle red"></div>
+                            <p>1</p>
+                          </div>
+                        </td>
+                        <td>
+                          <img src="images/manchestr-logo.svg" alt="">
+                          <p class="club-name">Манчестер Юнайтед</p>
+                        </td>
+                        <td>
+                          <p>3</p>
+                        </td>
+                        <td>
+                          <p>4</p>
+                        </td>
+                        <td>
+                          <p>3</p>
+                        </td>
+                        <td>
+                          <p>3</p>
+                        </td>
+                        <td>
+                          <p>12-16</p>
+                        </td>
+                        <td>
+                          <p>16</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="flex-box">
+                            <div class="circle info"></div>
+                            <p>1</p>
+                          </div>
+                        </td>
+                        <td>
+                          <img src="images/manchestr-logo.svg" alt="">
+                          <p class="club-name">Манчестер Юнайтед</p>
+                        </td>
+                        <td>
+                          <p>3</p>
+                        </td>
+                        <td>
+                          <p>4</p>
+                        </td>
+                        <td>
+                          <p>3</p>
+                        </td>
+                        <td>
+                          <p>3</p>
+                        </td>
+                        <td>
+                          <p>12-16</p>
+                        </td>
+                        <td>
+                          <p>16</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="table-color__status">
+                  <div class="color-status__box">
+                    <div class="circle info"></div>
+                    <p>Лига чемпионов УЕФА (Групповой этап)</p>
+                  </div>
+                  <div class="color-status__box">
+                    <div class="circle red"></div>
+                    <p>UEFA Лига Европы УЕФА</p>
+                  </div>
+                  <div class="color-status__box">
+                    <div class="circle wraning"></div>
+                    <p>UEFA Лига конференций УЕФА (Квалификация)</p>
+                  </div>
+                  <div class="color-status__box">
+                    <div class="circle red-50"></div>
+                    <p>UEFA Лига Европы УЕФА</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="right-box">
+                <h4 class="title-sm">Игроки</h4>
+                <div class="player-table">
+                  <div class="player-table__header">
+                    <p class="active">Бомбардиры</p>
+                    <p>Ассист</p>
+                    <p>Штрафы</p>
+                  </div>
+                  <div class="player-table__body">
+                    <div class="player-table__tr">
+                      <div class="flex">
+                        <img class="player-img" src="images/player-1.png" alt="">
+                        <div>
+                          <p>Коко Гауф</p>
+                          <span>5 голов</span>
+                        </div>
+                      </div>
+                      <img class="bvd-logo" src="images/bvd-logo.png" alt="" width="26" height="26">
+                    </div>
+                    <div class="player-table__tr">
+                      <div class="flex">
+                        <img class="player-img" src="images/player-1.png" alt="">
+                        <div>
+                          <p>Коко Гауф</p>
+                          <span>5 голов</span>
+                        </div>
+                      </div>
+                      <img class="bvd-logo" src="images/bvd-logo.png" alt="" width="26" height="26">
+                    </div>
+                    <div class="player-table__tr">
+                      <div class="flex">
+                        <img class="player-img" src="images/player-1.png" alt="">
+                        <div>
+                          <p>Коко Гауф</p>
+                          <span>5 голов</span>
+                        </div>
+                      </div>
+                      <img class="bvd-logo" src="images/bvd-logo.png" alt="" width="26" height="26">
+                    </div>
+                    <div class="player-table__tr">
+                      <div class="flex">
+                        <img class="player-img" src="images/player-1.png" alt="">
+                        <div>
+                          <p>Коко Гауф</p>
+                          <span>5 голов</span>
+                        </div>
+                      </div>
+                      <img class="bvd-logo" src="images/bvd-logo.png" alt="" width="26" height="26">
+                    </div>
+                    <div class="player-table__tr">
+                      <div class="flex">
+                        <img class="player-img" src="images/player-1.png" alt="">
+                        <div>
+                          <p>Коко Гауф</p>
+                          <span>5 голов</span>
+                        </div>
+                      </div>
+                      <img class="bvd-logo" src="images/bvd-logo.png" alt="" width="26" height="26">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="results-section">
+              <h3 class="title-box__sm">Подзаголовок текста</h3>
+              <p class="results-section__info">
+                предлагает прямые трансляции и результаты более 1000 чемпионатов, кубков и турниров по футболу
+                (<span>Российская Премьер-Лига,
+                  АПЛ, Бундеслига, Лига Чемпионов УЕФА</span>). Онлайн трансляции матчей (livescore) показывают счет
+                по
+                ходу
+                матча, а также
+                другую статистику LIVE. Футбольные результаты матчей обновляются в режиме реального времени.
+              </p>
+              <p class="results-section__info">
+                Наш "соккер" портал предоставляет Вам беспрецедентную футбольную статистику, а также подробные
+                футбольные превью и
+                футбольные классификации с соревнований по всему миру. Наша углубленная статистика служит источником
+                уникальных
+                качественных представлений и догадок для футбольных фанатов, игроков на ставках и букмекеров,
+                журналистов, футбольных
+                менеджеров и игроков. Также мы предлагаем футбольные турнирные таблицы, live результаты футбола,
+                рейтинг
+                лучших игроков,
+                уникальные статьи, графики, классификации и многое другое.
+              </p>
+              <p class="results-section__info">
+                Также мы подготовили для Вас наиболее информативную футбольную статистику, с которой анализ матчей,
+                команд и турниров
+                станет намного проще. Инструменты, доступные в разделах нашего сайта, помогут сэкономить время для
+                поиска ставки и
+                составления прогноза на матч. Смотреть футбол с нашим порталом станет гораздо интереснее!
+              </p>
+            </div>
+          </div>
+
+          <!-- right sidebar -->
+          <div class="right-sidebar">
+            <div class="right-sidebar__box top">
+              <div class="right-sidebar__box-header top">
+                <p>Рекомендуем букмекеров</p>
+                <img src="images/icons/next-arrow.svg" alt="next-arrow" />
+              </div>
+              <div class="right-sidebar__box-body">
+                <a href="#!" class="right-sidebar__box-content">
+                  <img src="images/fonbet.png" alt="fonbet" width="65" height="30" />
+                  <img src="images/icons/gift-box.svg" alt="gift-box" width="19" height="21" />
+                  <p class="right-sidebar__box-text">
+                    Фрибет 2 000 ₽ <br />
+                    без условий
+                  </p>
+                  <img src="images/icons/next-arrow.svg" alt="next-arrow" />
+                </a>
+
+                <a href="#!" class="right-sidebar__box-content">
+                  <img src="images/fonbet.png" alt="fonbet" width="65" height="30" />
+                  <img src="images/icons/gift-box.svg" alt="gift-box" width="19" height="21" />
+                  <p class="right-sidebar__box-text">
+                    Фрибет 2 000 ₽ <br />
+                    без условий
+                  </p>
+                  <img src="images/icons/next-arrow.svg" alt="next-arrow" />
+                </a>
+                <a href="#!" class="right-sidebar__box-content">
+                  <img src="images/fonbet.png" alt="fonbet" width="65" height="30" />
+                  <img src="images/icons/gift-box.svg" alt="gift-box" width="19" height="21" />
+                  <p class="right-sidebar__box-text">
+                    Фрибет 2 000 ₽ <br />
+                    без условий
+                  </p>
+                  <img src="images/icons/next-arrow.svg" alt="next-arrow" />
+                </a>
+                <a href="#!" class="right-sidebar__box-content">
+                  <img src="images/fonbet.png" alt="fonbet" width="65" height="30" />
+                  <img src="images/icons/gift-box.svg" alt="gift-box" width="19" height="21" />
+                  <p class="right-sidebar__box-text">
+                    Фрибет 2 000 ₽ <br />
+                    без условий
+                  </p>
+                  <img src="images/icons/next-arrow.svg" alt="next-arrow" />
+                </a>
+                <a href="#!" class="right-sidebar__box-content">
+                  <img src="images/fonbet.png" alt="fonbet" width="65" height="30" />
+                  <img src="images/icons/gift-box.svg" alt="gift-box" width="19" height="21" />
+                  <p class="right-sidebar__box-text">
+                    Фрибет 2 000 ₽ <br />
+                    без условий
+                  </p>
+                  <img src="images/icons/next-arrow.svg" alt="next-arrow" />
+                </a>
+                <a href="#!" class="right-sidebar__box-content">
+                  <img src="images/fonbet.png" alt="fonbet" width="65" height="30" />
+                  <img src="images/icons/gift-box.svg" alt="gift-box" width="19" height="21" />
+                  <p class="right-sidebar__box-text">
+                    Фрибет 2 000 ₽ <br />
+                    без условий
+                  </p>
+                  <img src="images/icons/next-arrow.svg" alt="next-arrow" />
+                </a>
+              </div>
+            </div>
+
+            <div class="right-sidebar__box middle">
+              <div class="right-sidebar__box-header">
+                <p>Топовые турниры</p>
+              </div>
+              <div class="right-sidebar__box-body">
+                <a href="#!" class="right-sidebar__box-content">
+                  <img src="images/liga-logo.png" alt="fonbet" width="31" height="31" />
+                  <div class="content-info">
+                    <p class="right-sidebar__box-text">Лига Чемпионов</p>
+                    <span>Европа</span>
+                  </div>
+                </a>
+
+                <a href="#!" class="right-sidebar__box-content">
+                  <img src="images/lion-logo.png" alt="lion-logo" width="31" height="31" />
+                  <div class="content-info">
+                    <p class="right-sidebar__box-text">АПЛ</p>
+                    <span>Англия</span>
+                  </div>
+                </a>
+
+                <a href="#!" class="right-sidebar__box-content">
+                  <img src="images/liga-logo.png" alt="fonbet" width="31" height="31" />
+                  <div class="content-info">
+                    <p class="right-sidebar__box-text">Лига Чемпионов</p>
+                    <span>Европа</span>
+                  </div>
+                </a>
+
+                <a href="#!" class="right-sidebar__box-content">
+                  <img src="images/lion-logo.png" alt="lion-logo" width="31" height="31" />
+                  <div class="content-info">
+                    <p class="right-sidebar__box-text">АПЛ</p>
+                    <span>Англия</span>
+                  </div>
+                </a>
+
+                <a href="#!" class="right-sidebar__box-content">
+                  <img src="images/liga-logo.png" alt="fonbet" width="31" height="31" />
+                  <div class="content-info">
+                    <p class="right-sidebar__box-text">Лига Чемпионов</p>
+                    <span>Европа</span>
+                  </div>
+                </a>
+
+                <a href="#!" class="right-sidebar__box-content">
+                  <img src="images/lion-logo.png" alt="lion-logo" width="31" height="31" />
+                  <div class="content-info">
+                    <p class="right-sidebar__box-text">АПЛ</p>
+                    <span>Англия</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="right-sidebar__box bottom">
+              <div class="right-sidebar__box-header">
+                <p>Топовые турниры</p>
+              </div>
+              <div class="right-sidebar__box-body">
+                <a href="#!" class="right-sidebar__box-content">
+                  <div class="middle-box">
+                    <div class="left-box">
+                      <img src="images/usg-logo.png" alt="fonbet" width="21" height="21" />
+                      <p>ЦСКА</p>
+                    </div>
+                    <div class="right-box">
+                      <p class="right-box__text">25 Января <span>в 12:30</span></p>
+                    </div>
+                  </div>
+                  <div class="middle-box two">
+                    <div class="left-box">
+                      <img src="images/torpedo-moscow.png" alt="fonbet" width="21" height="21" />
+                      <p>Торпедо-Москва</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#!" class="right-sidebar__box-content">
+                  <div class="middle-box">
+                    <div class="left-box">
+                      <img src="images/usg-logo.png" alt="fonbet" width="21" height="21" />
+                      <p>ЦСКА</p>
+                    </div>
+                    <div class="right-box">
+                      <p class="right-box__text">25 Января <span>в 12:30</span></p>
+                    </div>
+                  </div>
+                  <div class="middle-box two">
+                    <div class="left-box">
+                      <img src="images/torpedo-moscow.png" alt="fonbet" width="21" height="21" />
+                      <p>Торпедо-Москва</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#!" class="right-sidebar__box-content">
+                  <div class="middle-box">
+                    <div class="left-box">
+                      <img src="images/usg-logo.png" alt="fonbet" width="21" height="21" />
+                      <p>ЦСКА</p>
+                    </div>
+                    <div class="right-box">
+                      <p class="right-box__text">25 Января <span>в 12:30</span></p>
+                    </div>
+                  </div>
+                  <div class="middle-box two">
+                    <div class="left-box">
+                      <img src="images/torpedo-moscow.png" alt="fonbet" width="21" height="21" />
+                      <p>Торпедо-Москва</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#!" class="right-sidebar__box-content">
+                  <div class="middle-box">
+                    <div class="left-box">
+                      <img src="images/usg-logo.png" alt="fonbet" width="21" height="21" />
+                      <p>ЦСКА</p>
+                    </div>
+                    <div class="right-box">
+                      <p class="right-box__text">25 Января <span>в 12:30</span></p>
+                    </div>
+                  </div>
+                  <div class="middle-box two">
+                    <div class="left-box">
+                      <img src="images/torpedo-moscow.png" alt="fonbet" width="21" height="21" />
+                      <p>Торпедо-Москва</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#!" class="right-sidebar__box-content">
+                  <div class="middle-box">
+                    <div class="left-box">
+                      <img src="images/usg-logo.png" alt="fonbet" width="21" height="21" />
+                      <p>ЦСКА</p>
+                    </div>
+                    <div class="right-box">
+                      <p class="right-box__text">25 Января <span>в 12:30</span></p>
+                    </div>
+                  </div>
+                  <div class="middle-box two">
+                    <div class="left-box">
+                      <img src="images/torpedo-moscow.png" alt="fonbet" width="21" height="21" />
+                      <p>Торпедо-Москва</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#!" class="right-sidebar__box-content">
+                  <div class="middle-box">
+                    <div class="left-box">
+                      <img src="images/usg-logo.png" alt="fonbet" width="21" height="21" />
+                      <p>ЦСКА</p>
+                    </div>
+                    <div class="right-box">
+                      <p class="right-box__text">25 Января <span>в 12:30</span></p>
+                    </div>
+                  </div>
+                  <div class="middle-box two">
+                    <div class="left-box">
+                      <img src="images/torpedo-moscow.png" alt="fonbet" width="21" height="21" />
+                      <p>Торпедо-Москва</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="header-logo__box">
+            <a class="header-logo" href="#!">Sport <span>Obzor</span> </a>
+            <p class="header-logo__info">Лучшая спортивная статистика</p>
+          </div>
+          <div class="footer-menu__boxes">
+            <div class="footer-menu">
+              <ul>
+                <h4>Популярное</h4>
+                <li>
+                  <a href="#!">ПЛ</a>
+                </li>
+                <li>
+                  <a href="#!">Лига Чемпионов УЕФА</a>
+                </li>
+                <li>
+                  <a href="#!">Лига Европы УЕФА</a>
+                </li>
+                <li>
+                  <a href="#!">Лига Конференций</a>
+                </li>
+                <li>
+                  <a href="#!">КХЛ</a>
+                </li>
+              </ul>
+
+              <ul>
+                <h4 class="hidden">.</h4>
+                <li>
+                  <a href="#!">Единая лига ВТБ</a>
+                </li>
+                <li>
+                  <a href="#!">АПЛ</a>
+                </li>
+                <li>
+                  <a href="#!">Италия. Серия А</a>
+                </li>
+                <li>
+                  <a href="#!">Франция. Лига 1</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer-menu">
+              <ul>
+                <h4>Полезное</h4>
+                <li>
+                  <a href="#!">Рейтинг букмекерских контор</a>
+                </li>
+                <li>
+                  <a href="#!">Видео</a>
+                </li>
+                <li>
+                  <a href="#!">Новости</a>
+                </li>
+                <li>
+                  <a href="#!">Статьи</a>
+                </li>
+              </ul>
+
+              <ul>
+                <h4 class="hidden">.</h4>
+                <li>
+                  <a href="#!">Прогнозы</a>
+                </li>
+                <li>
+                  <a href="#!">Контакты</a>
+                </li>
+                <li>
+                  <a href="#!">О нас</a>
+                </li>
+                <li>
+                  <a href="#!">Правообладателям</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="footer-bottom__info">Все права защищены. bestsport365.ru © 2022 En</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- jquery js file -->
+  <script src="./js/jquery.min.js"></script>
+  <!-- jquery ui js -->
+  <script src="./js/jquery-ui.js"></script>
+  <!-- swiper js file -->
+  <script src="./js/swiper-bundle.min.js"></script>
+  <!-- custom js file -->
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
