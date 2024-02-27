@@ -2346,6 +2346,7 @@ input[type="search"]::-webkit-search-results-decoration {
 	background-color: var(--lavender);
 	border-radius: 5px;
 	padding-right: 17px;
+	flex-wrap: wrap;
 	margin-bottom: 14px;
 }
 
@@ -4099,11 +4100,70 @@ input[type="search"]::-webkit-search-results-decoration {
 	.team-overview .player-table .player-table__body {
 		width: 100%;
 	}
+
+	.bookmakers-page .bookmaker-box {
+		padding-right: 10px;
+		position: relative;
+		height: 86px;
+		align-items: start;
+		padding-top: 10px;
+	}
+
+	.bookmakers-page .bookmaker-box .number-box {
+		height: 38px;
+		width: 38px;
+		margin-top: -16px;
+		font-size: 15px;
+	}
+
+	.bookmaker-box .operating-systems {
+		position: absolute;
+		top: 43px;
+		right: 10px;
+	}
+
+	.bookmaker-box .view-review {
+		position: absolute;
+		top: 51px;
+		left: 50px;
+		font-size: 11px;
+	}
+
+	.bookmaker-box .mosbet-logo {
+		width: 55px;
+		height: 20px;
+	}
+
+	.bookmaker-box .gift-btn .gift-price {
+		font-size: 11px;
+	}
+
+	.bookmaker-box .gift-btn {
+		position: absolute;
+		top: 10px;
+		padding: 5px 8px;
+		height: 20px;
+		right: 10px;
+	}
+
+	.bookmakers-page .bookmaker-box__left {
+		gap: 14px;
+	}
+
+	.bookmakers-page .line {
+		margin-left: -20px;
+		margin-right: -20px;
+		width: 120%;
+	}
 }
 
 @media screen and (max-width: 400px) {
 	.ui-datepicker {
 		width: 88.9%;
+	}
+
+	.bookmakers-page .bookmaker-box .number-box {
+		margin-top: -10px;
 	}
 }
 
