@@ -3241,6 +3241,10 @@ input[type="search"]::-webkit-search-results-decoration {
 	.sidebars-section .search-box input {
 		max-width: 321px;
 	}
+
+	.review-league .left-box {
+		max-width: 100%;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -3266,6 +3270,10 @@ input[type="search"]::-webkit-search-results-decoration {
 
 	.team-overview .time-box {
 		display: none;
+	}
+
+	.review-league .time-box {
+		display: block;
 	}
 
 	.team-section.player-statistics__page::-webkit-scrollbar {
@@ -4155,6 +4163,42 @@ input[type="search"]::-webkit-search-results-decoration {
 		margin-right: -20px;
 		width: 120%;
 	}
+
+	.review-league .banner-small {
+		height: 94px;
+		line-height: 94px;
+	}
+
+	.tournament-table .team-section {
+		margin-bottom: 25px;
+	}
+
+	.review-league .tournament-table .table-color__status {
+		gap: 23px;
+		font-size: 12px;
+	}
+
+	.review-league .turnir-table__box .title-sm {
+		font-size: 15px;
+	}
+
+	.review-league .turnir-table p,
+	.review-league .turnir-table span {
+		font-size: 12px;
+		color: rgb(31, 38, 61);
+	}
+
+	.review-league .turnir-tr .flex {
+		gap: 26px;
+	}
+
+	.review-league .turnir-tr {
+		padding: 15px 17px 15px 21px;
+	}
+}
+
+.review-league .turnir-tr>.flex>p:first-child {
+	font-weight: 600;
 }
 
 @media screen and (max-width: 400px) {
