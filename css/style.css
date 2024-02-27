@@ -2184,6 +2184,7 @@ input[type="search"]::-webkit-search-results-decoration {
 	display: flex;
 	gap: 27px;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .left-sidebar__section .left-box .title-sm {
@@ -3004,6 +3005,10 @@ input[type="search"]::-webkit-search-results-decoration {
 	padding-bottom: 10px;
 }
 
+.match-page .match-tables.mt {
+	margin-top: 42px;
+}
+
 .match-table .color-status__box.width {
 	max-width: 350px;
 	width: 100%;
@@ -3120,6 +3125,12 @@ input[type="search"]::-webkit-search-results-decoration {
 	}
 }
 
+@media screen and (max-width: 1185px) {
+	.right-sidebar {
+		display: none;
+	}
+}
+
 @media screen and (max-width: 1120px) {
 	.sidebars-section .container {
 		gap: 10px;
@@ -3182,6 +3193,11 @@ input[type="search"]::-webkit-search-results-decoration {
 
 	.footer ul a:first-child {
 		margin-top: 13px;
+	}
+
+	.team-overview .team-overview__box {
+		flex-wrap: wrap;
+		gap: 0;
 	}
 }
 
@@ -3247,6 +3263,10 @@ input[type="search"]::-webkit-search-results-decoration {
 		padding-bottom: 19px;
 	}
 
+	.team-overview .time-box {
+		display: none;
+	}
+
 	.team-section.player-statistics__page::-webkit-scrollbar {
 		height: 5px;
 	}
@@ -3262,6 +3282,18 @@ input[type="search"]::-webkit-search-results-decoration {
 
 	.tournament-table .team-section tbody td:nth-child(2) {
 		min-width: 200px;
+	}
+
+	.team-overview .team-overview__boxes {
+		flex-wrap: wrap;
+	}
+
+	.teams-card .teams-box {
+		width: fit-content;
+	}
+
+	.team-overview .team-overview__box .teams-name {
+		white-space: normal;
 	}
 }
 
@@ -4024,6 +4056,48 @@ input[type="search"]::-webkit-search-results-decoration {
 
 	.player-card .accordion-header .accordion-title {
 		margin: 0;
+	}
+
+	.team-overview__boxes .team-img {
+		margin: 0 auto;
+		width: 249px;
+		height: 227px;
+	}
+
+	.team-overview .player-table {
+		overflow: auto;
+	}
+
+	.team-overview .team-overview__box .teams-name {
+		font-size: 11px;
+	}
+
+	.teams-card .teams-box {
+		padding: 5px;
+	}
+
+	.team-overview .teams-card .teams-card__title {
+		position: absolute;
+		top: 26px;
+		right: 16px;
+	}
+
+	.team-overview .team-overview__box span {
+		margin-bottom: 12px;
+	}
+
+	.team-overview .team-overview__box {
+		position: relative;
+		padding: 23px 16px 23px 19px;
+	}
+
+	.team-overview .right-box {
+		max-width: 100%;
+	}
+
+	.team-overview .player-table .player-table__header,
+	.team-overview .player-table .player-table__body {
+		width: 100%;
 	}
 }
 
