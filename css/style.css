@@ -3245,6 +3245,17 @@ input[type="search"]::-webkit-search-results-decoration {
 	.review-league .left-box {
 		max-width: 100%;
 	}
+
+	.match-page .results-boxes__header {
+		flex-wrap: wrap;
+		gap: 13px;
+		justify-content: center;
+	}
+
+	.match-page .status-bar {
+		order: 1;
+		margin: 0 auto;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -3304,6 +3315,14 @@ input[type="search"]::-webkit-search-results-decoration {
 	.team-overview .team-overview__box .teams-name {
 		white-space: normal;
 	}
+
+	.match-page .match-boxes {
+		gap: 16px;
+	}
+}
+
+.match-page .time-box .times {
+	flex-wrap: nowrap;
 }
 
 @media screen and (max-width: 705px) {
@@ -3430,10 +3449,51 @@ input[type="search"]::-webkit-search-results-decoration {
 		margin: 0 auto;
 	}
 
+	.match-page .time-box .times::-webkit-scrollbar {
+		height: 0;
+	}
+
+	.match-page .time-box .times {
+		margin-left: 0;
+		overflow: auto;
+	}
+
+	.match-page .time-box.line-bottom .times a {
+		white-space: nowrap;
+	}
+
+	.statistiks-match.searching-results .results-box .results-left {
+		flex-wrap: nowrap;
+	}
+
+	.match-page .statistiks-match .progres-boxes .progres-info__box {
+		width: 143px;
+	}
+
+	.match-page .statistiks-match .progres-boxes .progres-blue__box {
+		width: 150px;
+	}
+
+	.match-page .result-progres .result-progres__box.info,
+	.match-page .result-progres .result-progres__box.blue {
+		width: 80px;
+	}
+
+	.match-page .results-boxes .results-box>.flex p {
+		color: rgb(90, 100, 135);
+		font-size: 13px;
+		font-weight: 600;
+		line-height: 17px;
+	}
+
 }
 
 .forecasts .media-block,
 .media-files .media-block {
+	display: none;
+}
+
+.sidebars-section.match-page .select {
 	display: none;
 }
 
@@ -4195,6 +4255,164 @@ input[type="search"]::-webkit-search-results-decoration {
 	.review-league .turnir-tr {
 		padding: 15px 17px 15px 21px;
 	}
+
+	.match-banner .club-img {
+		width: 74px;
+		height: 74px;
+		margin: 0 auto;
+	}
+
+	.match-page .match-boxes {
+		margin-bottom: 78px;
+		margin-top: 25px;
+		gap: 0;
+	}
+
+	.match-page .match-banner {
+		position: relative;
+		padding: 26px 25px 38px 25px;
+	}
+
+	.match-banner .club-img img {
+		width: 58px;
+		height: 58px;
+	}
+
+	.match-banner .match-time {
+		font-size: 25px;
+		line-height: 32px;
+	}
+
+	.match-banner .time-status,
+	.match-banner .match-time__box .match-date {
+		font-size: 10px;
+	}
+
+	.match-banner .match-time__box .see-match__btn {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 27px;
+		width: 129.05px;
+		height: 33.65px;
+		font-size: 12px;
+	}
+
+	.match-banner .match-time__box .match-date {
+		padding: 0;
+	}
+
+	.match-banner .match-date {
+		font-size: 13px;
+		padding: 0 20px;
+		margin-bottom: 5px;
+	}
+
+	.match-banner .club-title {
+		font-size: 12px;
+	}
+
+	.match-banner .match-box .club-name {
+		font-size: 12px;
+		line-height: 15px;
+	}
+
+	.match-banner .match-box p {
+		font-size: 10px;
+		line-height: 114%;
+	}
+
+	.match-banner .match-box {
+		max-width: 97px;
+		width: 100%;
+	}
+
+	.match-page .match-table__tr {
+		gap: 12px;
+	}
+
+	.match-page .match-table__tr>.flex span {
+		width: 40px;
+	}
+
+	.match-page .title-text__sm {
+		text-align: left;
+	}
+
+	.bookmakers-page .title-info {
+		margin: 17px 0 20px 0;
+	}
+
+	.match-page .player-table .player-table__body {
+		width: 100%;
+	}
+
+	.match-page .player-table {
+		overflow: hidden;
+	}
+
+	.title-info {
+		font-size: 11px;
+		text-align: center;
+	}
+
+	.sidebars-section.match-page .select {
+		display: block;
+		margin-bottom: 18px;
+	}
+
+	.match-page .player-table.hidden {
+		display: none;
+	}
+
+	.match-page .progres-boxes .progres-info__box {
+		width: 152px;
+	}
+
+	.match-page .progres-boxes .progres-silver__box {
+		width: 63px;
+	}
+
+	.match-page .progres-boxes .progres-blue__box {
+		width: 78px;
+	}
+
+	.match-page .club-name {
+		font-size: 12px;
+	}
+
+	.match-page .results-boxes__header {
+		justify-content: space-between;
+		padding: 13px 11px;
+	}
+
+	.match-page .progres-number {
+		font-size: 11px;
+	}
+
+	.match-page .results-box__link {
+		position: absolute;
+		top: 12px;
+		right: 10px;
+	}
+
+	.match-page .history-meetings .title-box__sm a,
+	.match-page .statistiks-match .title-box__sm a {
+		display: none;
+	}
+
+	.match-page .left-sidebar .title-box__sm {
+		justify-content: start;
+		margin-bottom: 16px;
+	}
+
+	.searching-results .results-boxes {
+		margin-top: 0;
+	}
+}
+
+.match-page .player-table span.green {
+	color: #22B242;
 }
 
 .review-league .turnir-tr>.flex>p:first-child {
