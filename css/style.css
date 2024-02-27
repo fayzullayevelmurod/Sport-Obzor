@@ -2998,7 +2998,30 @@ input[type="search"]::-webkit-search-results-decoration {
 
 /* match page */
 
+/* match-table */
+.match-table .team-overview .tournament-table .table-color__status {
+	justify-content: start;
+	padding-bottom: 10px;
+}
 
+.match-table .color-status__box.width {
+	max-width: 350px;
+	width: 100%;
+}
+
+.match-table .time-box {
+	margin: 0 0 33px 0;
+}
+
+.match-table .hero-section .breadcrumb {
+	margin-bottom: 24px;
+}
+
+.match-table .time-box .times {
+	gap: 45px;
+}
+
+/* match-table */
 
 /* footer style */
 .footer {
