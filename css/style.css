@@ -3455,7 +3455,11 @@ input[type="search"]::-webkit-search-results-decoration {
 
 	.match-page .time-box .times {
 		margin-left: 0;
-		overflow: auto;
+		overflow-x: auto;
+	}
+
+	.match-table .times::-webkit-scrollbar {
+		height: 0;
 	}
 
 	.match-page .time-box.line-bottom .times a {
@@ -3477,6 +3481,16 @@ input[type="search"]::-webkit-search-results-decoration {
 	.match-page .result-progres .result-progres__box.info,
 	.match-page .result-progres .result-progres__box.blue {
 		width: 80px;
+	}
+
+	.match-table .time-box .times {
+		flex-wrap: nowrap;
+		margin-left: 0;
+		overflow: auto;
+	}
+
+	.match-table .time-box.line-bottom .times a {
+		white-space: nowrap;
 	}
 
 	.match-page .results-boxes .results-box>.flex p {
@@ -4454,6 +4468,14 @@ input[type="search"]::-webkit-search-results-decoration {
 
 	.searching-results .results-box .results-left {
 		gap: 23px;
+	}
+
+	.bookmakers-page .title-info {
+		text-align: left;
+	}
+
+	.match-table .time-box {
+		display: none;
 	}
 }
 
