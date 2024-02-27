@@ -3029,6 +3029,69 @@ input[type="search"]::-webkit-search-results-decoration {
 
 /* match-table */
 
+/* match-betting */
+
+.match-betting tbody tr td {
+	padding: 10px 0;
+}
+
+.match-betting thead tr td:first-child {
+	text-align: left;
+	white-space: nowrap
+}
+
+.match-betting .team-section tbody td:nth-child(2) {
+	min-width: fit-content !important;
+}
+
+.match-betting tbody tr td:first-child {
+	padding-left: 18px;
+	max-width: 478px;
+	width: 56%;
+}
+
+.match-betting td {
+	text-align: center;
+}
+
+.match-betting tbody td>div {
+	margin: 0 auto;
+}
+
+.match-betting tbody tr td:last-child {
+	padding-right: 32px;
+}
+
+.match-betting tbody tr td>div:first-child {
+	display: flex;
+	align-items: center;
+	gap: 13px;
+}
+
+.match-betting .match-betting__box {
+	width: 44px;
+	height: 44px;
+	background-color: var(--lavender);
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgb(81, 89, 113);
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 15px;
+}
+
+.match-betting .time-box {
+	margin-top: 37px;
+}
+
+.match-betting .team-section tbody td:nth-child(2) {
+	display: block;
+}
+
+/* match-betting */
+
 /* footer style */
 .footer {
 	margin-top: 48px;
@@ -3328,6 +3391,14 @@ input[type="search"]::-webkit-search-results-decoration {
 @media screen and (max-width: 705px) {
 	.header .header-midle {
 		border-bottom: 0.5px solid transparent;
+	}
+
+	.match-betting thead tr td:first-child {
+		min-width: 300px;
+	}
+
+	.match-betting .team-section tbody td:nth-child(2) {
+		min-width: 70px !important;
 	}
 
 	.header-bottom {
@@ -4476,6 +4547,10 @@ input[type="search"]::-webkit-search-results-decoration {
 
 	.match-table .time-box {
 		display: none;
+	}
+
+	.match-betting thead tr td:first-child {
+		min-width: 250px;
 	}
 }
 
