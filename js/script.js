@@ -180,7 +180,7 @@ $(document).ready(function () {
 
 		accordionContent.slideUp(0);
 		accordionHeader.click(function (e) {
-			if (!$(e.target).is('.accordion-title__box svg, .star-icon')) {
+			if (!$(e.target).is('.accordion-title__box svg, .star-icon') && !$(e.target).is('.accordion-title__box svg path, .star-icon')) {
 				const currentHeader = $(this);
 				const currentContent = currentHeader.siblings('.accordion-content__line');
 				currentHeader.toggleClass('active');
@@ -273,8 +273,6 @@ $(document).ready(function () {
 			}
 		});
 	});
-
-
 
 	// header bottome menu
 	$('.bars-btn').click(function () {

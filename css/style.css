@@ -949,6 +949,10 @@ html .ui-button.ui-state-disabled:active {
 	fill: #FFC01E;
 }
 
+.match-results__page .new-select__list {
+	height: 160px;
+}
+
 .accordion .star-icon,
 .star-icon__two {
 	cursor: pointer;
@@ -1732,6 +1736,7 @@ td {
 .new-select__item span {
 	display: block;
 	padding: 10px 21px;
+	cursor: pointer;
 }
 
 .new-select__item span:hover {
@@ -1878,6 +1883,10 @@ input[type="search"]::-webkit-search-results-decoration {
 	align-items: center;
 	gap: 16px;
 	margin-bottom: 13px;
+}
+
+.searching-results .not-mb .results-box .results-box__left {
+	margin-bottom: 0;
 }
 
 .searching-results .results-box .results-box__left:last-child {
@@ -4578,6 +4587,10 @@ input[type="search"]::-webkit-search-results-decoration {
 
 	.review-league .tournament-table .select {
 		display: block;
+	}
+
+	.media-files .media-files__box .media-img {
+		object-fit: initial !important;
 	}
 }
 
