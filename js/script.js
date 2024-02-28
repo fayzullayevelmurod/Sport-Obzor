@@ -151,6 +151,16 @@ $(document).ready(function () {
 				$title.text(text);
 			}
 		});
+		$('.group-name a p').each(function () {
+			let $title = $(this);
+			let text = $title.text();
+
+			if ($(window).width() <= 400 && text.length > 10) {
+				$title.text(text.substring(0, 10) + '...');
+			} else {
+				$title.text(text);
+			}
+		})
 	}
 
 	truncateText();

@@ -1331,6 +1331,19 @@ html .ui-button.ui-state-disabled:active {
 	padding-left: 20px;
 }
 
+.results-section ul.not-pl {
+	padding-left: 0;
+	list-style: none;
+}
+
+.results-section ul.not-pl li::before {
+	display: none;
+}
+
+.results-section ul.not-pl .results-section__info {
+	padding-bottom: 22px !important;
+}
+
 .results-section .results-section__info {
 	color: var(--gunmetal-blue);
 	font-size: 13px;
@@ -2756,6 +2769,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .match-page .player-table .player-table__body .player-table__tr>.flex {
 	align-items: center;
+	display: flex;
 }
 
 .match-page .player-table__body .player-table__tr .tr-number {
@@ -3904,6 +3918,23 @@ input[type="search"]::-webkit-search-results-decoration {
 		flex-wrap: wrap;
 		justify-content: end;
 		row-gap: 10px;
+	}
+
+	.home-page .left-sidebar .accordion-statistiks.wrap,
+	.tenis-page .left-sidebar .accordion-statistiks.wrap {
+		flex-wrap: wrap;
+	}
+
+	.home-page .left-sidebar .accordion-statistiks,
+	.tenis-page .left-sidebar .accordion-statistiks {
+		flex-wrap: nowrap;
+		margin-top: auto;
+		margin-left: 15px;
+	}
+
+	.home-page .left-sidebar .group-name__box p,
+	.tenis-page .left-sidebar .group-name__box p {
+		margin-right: 0;
 	}
 
 	.btn {
