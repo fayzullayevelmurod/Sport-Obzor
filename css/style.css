@@ -192,6 +192,7 @@ body.hidden {
 	font-size: 15px;
 	font-weight: 700;
 	line-height: 19px;
+	color: var(--white);
 }
 
 .header .freebet-btn {
@@ -288,7 +289,7 @@ body.hidden {
 	position: relative;
 }
 
-.header .search-box .search-form {
+.search-form {
 	position: absolute;
 	top: 35px;
 	left: 50%;
@@ -298,7 +299,7 @@ body.hidden {
 	z-index: 9999;
 }
 
-.header .search-box .search-input::before {
+.search-input::before {
 	content: "";
 	position: absolute;
 	top: -3px;
@@ -310,18 +311,19 @@ body.hidden {
 	transform: rotate(45deg);
 }
 
-.header .search-box .search-input {
+.search-input {
 	position: relative;
 }
 
-.header .search-box .search-input svg {
+.search-input svg {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 	right: 16px;
+	cursor: pointer;
 }
 
-.header .search-box .search-input input {
+.search-input input {
 	border-radius: 5px;
 	background: rgb(255, 255, 255);
 	width: 319px;
@@ -336,7 +338,7 @@ body.hidden {
 	line-height: 19px;
 }
 
-.header .search-box .search-input input::placeholder {
+.search-input input::placeholder {
 	color: var(--midnight-blue);
 	font-size: 15px;
 	font-weight: 400;
@@ -364,7 +366,11 @@ body.hidden {
 }
 
 .header-bottom {
-	background-color: var(--gunmetal-blue);
+	background-color: #515971;
+}
+
+.header-bottom.active {
+	background-color: #343B55;
 }
 
 .header-bottom .header-nav__sublist {
@@ -937,6 +943,20 @@ html .ui-button.ui-state-disabled:active {
 
 .left-sidebar .accordion {
 	margin-bottom: 20px;
+}
+
+.accordion .accordion-title__box svg.active>path {
+	fill: #FFC01E;
+}
+
+.accordion .star-icon,
+.star-icon__two {
+	cursor: pointer;
+}
+
+.accordion .star-icon.active>path,
+.star-icon__two.active>path {
+	fill: #FFC01E;
 }
 
 .left-sidebar .accordion:last-child {
@@ -1630,8 +1650,7 @@ td {
 	color: var(--white);
 	font-size: 10px;
 	font-weight: 600;
-	line-height: 13px;
-	letter-spacing: 0%;
+	line-height: 16px;
 	border-radius: 2px;
 }
 
@@ -1922,7 +1941,6 @@ input[type="search"]::-webkit-search-results-decoration {
 	font-size: 12px;
 	font-weight: 400;
 	line-height: 15px;
-	letter-spacing: 0%;
 }
 
 .searching-results .results-box .results-box__right {
@@ -2274,7 +2292,6 @@ input[type="search"]::-webkit-search-results-decoration {
 	font-size: 14px;
 	font-weight: 600;
 	line-height: 18px;
-	letter-spacing: 0%;
 	text-align: left;
 }
 
@@ -2447,6 +2464,10 @@ input[type="search"]::-webkit-search-results-decoration {
 .review-league .player-statistics .times {
 	gap: 0px;
 	margin-bottom: 28px;
+}
+
+.review-league .tournament-table .select {
+	display: none;
 }
 
 .review-league .banner-small {
@@ -2698,7 +2719,6 @@ input[type="search"]::-webkit-search-results-decoration {
 	font-size: 18px;
 	font-weight: 600;
 	line-height: 23px;
-	letter-spacing: 0%;
 }
 
 .match-page .player-table .player-img {
@@ -2716,7 +2736,6 @@ input[type="search"]::-webkit-search-results-decoration {
 	font-size: 14px;
 	font-weight: 600;
 	line-height: 18px;
-	letter-spacing: 0%;
 }
 
 .match-page .player-table span {
@@ -3432,8 +3451,12 @@ input[type="search"]::-webkit-search-results-decoration {
 		color: var(--white);
 	}
 
+	.header-midle.active .nav-item .nav-link.active {
+		color: #22B242;
+	}
+
 	.header .header-midle.active {
-		background-color: var(--gunmetal-blue);
+		background-color: #343B55;
 		border-bottom-color: #484e61;
 	}
 
@@ -3723,7 +3746,7 @@ input[type="search"]::-webkit-search-results-decoration {
 		position: relative;
 	}
 
-	.header .search-box .search-form {
+	.search-form {
 		left: 0px;
 		transform: translateX(0);
 		background-color: var(--lavender);
@@ -3733,16 +3756,16 @@ input[type="search"]::-webkit-search-results-decoration {
 		top: 100%;
 	}
 
-	.header .search-box .search-input input {
+	.search-input input {
 		box-shadow: none;
 		width: 100%;
 	}
 
-	.header .search-box .search-input::before {
+	.search-input::before {
 		display: none;
 	}
 
-	.header .search-box .search-form::before {
+	.search-form::before {
 		content: "";
 		position: absolute;
 		top: -3px;
@@ -4534,7 +4557,7 @@ input[type="search"]::-webkit-search-results-decoration {
 	}
 
 	.searching-results .results-boxes {
-		margin-top: 0;
+		margin-top: 19px;
 	}
 
 	.searching-results .results-box .results-left {
@@ -4551,6 +4574,10 @@ input[type="search"]::-webkit-search-results-decoration {
 
 	.match-betting thead tr td:first-child {
 		min-width: 250px;
+	}
+
+	.review-league .tournament-table .select {
+		display: block;
 	}
 }
 
