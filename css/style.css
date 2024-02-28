@@ -643,7 +643,7 @@ body.hidden {
 }
 
 .right-sidebar .middle-box .right-box {
-	/* text-align: end; */
+	text-align: end;
 }
 
 .right-sidebar .middle-box .right-box__text {
@@ -3101,6 +3101,7 @@ input[type="search"]::-webkit-search-results-decoration {
 	height: 44px;
 	background-color: var(--lavender);
 	border-radius: 5px;
+	margin: 0 auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -4639,4 +4640,31 @@ input[type="search"]::-webkit-search-results-decoration {
 .swiper-button-next img {
 	width: 10px;
 	height: 10px;
+}
+
+/* tabs */
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+.tab-header__item {
+	cursor: pointer;
+}
+
+.tab-content {
+	animation: foo 0.4s linear;
+}
+
+@keyframes foo {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }

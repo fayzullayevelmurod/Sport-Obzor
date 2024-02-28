@@ -293,4 +293,28 @@ $(document).ready(function () {
 		$('.media-files__boxes .read-more').toggleClass('media-hidden');
 	});
 
+	// tab
+	const $tabContent = $('.tab-content');
+	const $tabHeader = $('.player-table__header');
+	const $tabHeaderItems = $('.tab-header__item');
+
+	function hideTabs() {
+		$tabContent.addClass('hide').removeClass('show');
+		$tabHeaderItems.removeClass('active');
+	}
+
+	function showTabs(i = 0) {
+		$tabContent.eq(i).removeClass('hide').addClass('show');
+		$tabHeaderItems.eq(i).addClass('active');
+	}
+
+	hideTabs();
+	showTabs();
+
+	$tabHeader.on('click', '.tab-header__item', function () {
+		const idx = $tabHeaderItems.index(this);
+		hideTabs();
+		showTabs(idx);
+	});
+
 });
