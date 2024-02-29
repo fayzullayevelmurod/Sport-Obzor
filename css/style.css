@@ -3434,6 +3434,7 @@ input[type="search"]::-webkit-search-results-decoration {
 	.header .header-midle {
 		border-bottom: 0.5px solid transparent;
 	}
+
 	.match-betting thead tr td:first-child {
 		min-width: 300px;
 	}
@@ -4061,8 +4062,9 @@ input[type="search"]::-webkit-search-results-decoration {
 		right: 9px;
 	}
 
-	.left-sidebar .group-name__box .group-numbers {
+	.tenis-page .left-sidebar .group-name__box .group-numbers {
 		margin-left: auto;
+		width: 33%;
 	}
 
 	.left-sidebar .group-name__box .group-number {
