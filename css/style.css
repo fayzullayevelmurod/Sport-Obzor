@@ -1341,7 +1341,7 @@ html .ui-button.ui-state-disabled:active {
 
 .results-section ul.not-pl .results-section__info {
 	padding-bottom: 22px !important;
-	list-style: decimal;
+	list-style: disc;
 }
 
 .results-section .results-section__info {
