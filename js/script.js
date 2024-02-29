@@ -155,8 +155,8 @@ $(document).ready(function () {
 			let $title = $(this);
 			let text = $title.text();
 
-			if ($(window).width() <= 400 && text.length > 11) {
-				$title.text(text.substring(0, 11) + '...');
+			if ($(window).width() <= 375 && text.length > 11) {
+				$title.text(text.substring(0, 14) + '...');
 			} else {
 				$title.text(text);
 			}
