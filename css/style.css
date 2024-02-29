@@ -1664,7 +1664,7 @@ td {
 }
 
 .tournament-table tbody .status-boxes>div>p {
-	font-size: 10px;
+	font-size: 10px !important;
 	color: var(--white);
 	font-weight: 600;
 	line-height: 16px !important;
