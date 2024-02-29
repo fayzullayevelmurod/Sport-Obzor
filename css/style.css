@@ -1656,19 +1656,16 @@ td {
 	justify-content: end;
 }
 
-.tournament-table tbody .status-boxes div {
+.tournament-table tbody .status-boxes div,
+.tournament-table tbody .status-boxes>p {
 	background-color: var(--forest-green);
-	width: 16px;
-	height: 16px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
 	color: var(--white);
 	font-size: 10px;
 	font-weight: 600;
 	line-height: 16px;
 	border-radius: 2px;
+	padding: 0px 4px;
+	text-align: center;
 }
 
 .tournament-table tbody .status-boxes .silver-box {
