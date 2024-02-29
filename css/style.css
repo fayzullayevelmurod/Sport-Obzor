@@ -4065,7 +4065,8 @@ input[type="search"]::-webkit-search-results-decoration {
 
 	.tenis-page .left-sidebar .group-name__box .group-numbers {
 		margin-left: auto;
-		width: 33%;
+		width: 40%;
+		gap: 10px;
 	}
 
 	.left-sidebar .group-name__box .group-number {
