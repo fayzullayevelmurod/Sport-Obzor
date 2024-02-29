@@ -1341,6 +1341,7 @@ html .ui-button.ui-state-disabled:active {
 
 .results-section ul.not-pl .results-section__info {
 	padding-bottom: 22px !important;
+	list-style: decimal;
 }
 
 .results-section .results-section__info {
@@ -3928,7 +3929,7 @@ input[type="search"]::-webkit-search-results-decoration {
 	.tenis-page .left-sidebar .accordion-statistiks {
 		flex-wrap: nowrap;
 		margin-top: auto;
-		margin-left: 15px;
+		margin-left: 0;
 	}
 
 	.home-page .left-sidebar .group-name__box p,
@@ -4620,6 +4621,10 @@ input[type="search"]::-webkit-search-results-decoration {
 
 	.media-files .media-files__box .media-img {
 		object-fit: initial !important;
+	}
+
+	.left-sidebar .accordion-statistiks {
+		gap: 7px;
 	}
 }
 
