@@ -1663,11 +1663,11 @@ td {
 	text-align: center;
 }
 
-.tournament-table tbody .status-boxes div p {
+.tournament-table tbody .status-boxes>div>p {
 	font-size: 10px;
 	color: var(--white);
 	font-weight: 600;
-	line-height: 16px;
+	line-height: 16px !important;
 	text-align: center;
 }
 
