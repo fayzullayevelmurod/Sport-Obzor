@@ -1267,7 +1267,6 @@ html .ui-button.ui-state-disabled:active {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
 	border-radius: 5px;
 	z-index: -1;
 }
@@ -3435,7 +3434,6 @@ input[type="search"]::-webkit-search-results-decoration {
 	.header .header-midle {
 		border-bottom: 0.5px solid transparent;
 	}
-
 	.match-betting thead tr td:first-child {
 		min-width: 300px;
 	}
@@ -4052,9 +4050,6 @@ input[type="search"]::-webkit-search-results-decoration {
 		padding: 14px 19px 18px 23px;
 	}
 
-	.media-files .media-files__box {
-		height: 160px;
-	}
 
 	.left-sidebar .rotate-icon {
 		margin-left: 15px;
