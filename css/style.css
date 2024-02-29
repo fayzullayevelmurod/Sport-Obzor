@@ -1656,8 +1656,7 @@ td {
 	justify-content: end;
 }
 
-.tournament-table tbody .status-boxes div,
-.tournament-table tbody .status-boxes>p {
+.tournament-table tbody .status-boxes div {
 	background-color: var(--forest-green);
 	color: var(--white);
 	font-size: 10px;
