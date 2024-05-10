@@ -86,8 +86,10 @@ $(document).ready(function () {
 		})
 	})
 
-	const downBox = $('.header-bottom .down-box');
-	const headerDropList = $('.header__drop-list');
+	const downBox = $('.header-bottom .down-box-one');
+	const downBoxTwo = $(".header-bottom .down-box-two");
+	const headerDropList = $('.header__drop-list-one');
+	const headerDropListTwo = $(".header__drop-list-two");
 
 	downBox.hover(
 		function () {
@@ -97,6 +99,14 @@ $(document).ready(function () {
 			headerDropList.removeClass('drop-list-nav');
 		}
 	);
+	downBoxTwo.hover(
+    function () {
+      headerDropListTwo.addClass("drop-list-nav");
+    },
+    function () {
+      headerDropListTwo.removeClass("drop-list-nav");
+    }
+  );
 
 	headerDropList.hover(
 		function () {
@@ -106,6 +116,14 @@ $(document).ready(function () {
 			$(this).removeClass('drop-list-nav');
 		}
 	);
+	headerDropListTwo.hover(
+    function () {
+      $(this).addClass("drop-list-nav");
+    },
+    function () {
+      $(this).removeClass("drop-list-nav");
+    }
+  );
 
 	// datepicker
 	try {
@@ -188,7 +206,7 @@ $(document).ready(function () {
 			checkStarIcon(item);
 		});
 
-		accordionContent.slideUp(0);
+		// accordionContent.slideUp(0);
 		accordionHeader.click(function (e) {
 			if (!$(e.target).is('.accordion-title__box svg, .star-icon') && !$(e.target).is('.accordion-title__box svg path, .star-icon')) {
 				const currentHeader = $(this);
@@ -326,5 +344,6 @@ $(document).ready(function () {
 		hideTabs();
 		showTabs(idx);
 	});
+
 
 });
